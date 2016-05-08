@@ -35,8 +35,14 @@
     <import resource="spring-mybatis.xml"/>
     <import resource="mvc-servlet.xml"/>
     <!--配置扫描的包-->
-    <context:component-scan base-package="com.cc" />
+    <context:component-scan base-package="com.jj" />
 
-
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes" value = "text/plain;charset=UTF-8" />
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
 
 </beans>
