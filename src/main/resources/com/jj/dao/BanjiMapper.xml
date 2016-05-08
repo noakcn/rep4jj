@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jj.dao.IBanjiDao">
+    <insert id="save" parameterType="com.jj.pojo.Banji">
+        INSERT INTO banji (id,mingcheng,zhuanye_id,nianji)
+        VALUES (#{id},#{mingcheng},#{zhuanyeId},#{nianji})
+    </insert>
+
+    <select id="findAll" resultType="com.jj.pojo.Banji">
+      SELECT * FROM banji WHERE zhuanye_id=#{zhuanyeId}
+    </select>
+
+    <select id="findOne" resultType="com.jj.pojo.Banji">
+      SELECT * FROM banji
+      WHERE zhuanye_id=#{zhuanyeId}
+      AND nianji=#{nianji}
+      AND mingcheng=#{mingcheng}
+    </select>
+</mapper>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jj.dao.IZhuanyeDao">
+    <insert id="save" parameterType="com.jj.pojo.Zhuanye">
+        INSERT INTO zhuanye (id,mingcheng,xueyuan_id)
+        VALUES (#{id},#{mingcheng},#{xueyuanId})
+    </insert>
+
+    <select id="findAll" resultType="com.jj.pojo.Zhuanye">
+      SELECT * FROM zhuanye WHERE xueyuan_id=#{xueyuanId}
+    </select>
+
+</mapper>
+

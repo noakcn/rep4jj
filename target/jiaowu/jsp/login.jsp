@@ -256,9 +256,9 @@
                 "holdLogin": $("#holdLogin").val()
             },
             success: function (data) {
-                console.log(data);
+
                 if(data!="success"){
-                showWarningNotification(data);
+                    showWarningNotification(data);
                 }else{
                     location.href="/user/to/index.do";
                 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jj.dao.IXueyuanDao">
+    <insert id="save" parameterType="com.jj.pojo.Xueyuan">
+        INSERT INTO xueyuan (id,mingcheng)
+        VALUES (#{id},#{mingcheng})
+    </insert>
+
+    <select id="findAll" resultType="com.jj.pojo.Xueyuan">
+      SELECT * from xueyuan ORDER by mingcheng
+    </select>
+
+</mapper>
+
