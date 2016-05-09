@@ -9,4 +9,5 @@ public interface IXueshengDao {
 
     XueSheng findOne(String userId);
 
+    int save(XueSheng xueSheng);
 }

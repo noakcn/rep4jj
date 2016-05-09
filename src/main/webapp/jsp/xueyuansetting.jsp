@@ -233,7 +233,7 @@
 
                                 <strong>
                                     <i class="ace-icon fa fa-times"></i>
-                                    添加失败，${msg2}
+                                    添加失败，${msg}
                                 </strong>
                                 <br>
                             </div>

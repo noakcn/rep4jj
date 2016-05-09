@@ -145,8 +145,11 @@
       <artifactId>fastjson</artifactId>
       <version>1.2.7</version>
     </dependency>
-
-
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>3.12</version>
+    </dependency>
 
 
   </dependencies>

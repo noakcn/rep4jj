@@ -2,6 +2,7 @@ package com.jj.pojo;
 
 import com.jj.pojo.enumclass.Enable;
 import com.jj.pojo.enumclass.Role;
+import com.jj.utils.UUIDUtils;
 
 /**
  * Created by yewangwang on 2016/5/5.
@@ -12,6 +13,20 @@ public class User {
     private String password;
     private Role role;
     private Enable enable;
+    private String email;
+
+    public User() {
+        this.id= UUIDUtils.generateId();
+
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public String getId() {
         return id;

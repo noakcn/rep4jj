@@ -8,5 +8,10 @@
 
     </select>
 
+    <insert id="save" parameterType="com.jj.pojo.User">
+        INSERT INTO users(id,username,password,email,role)
+        VALUES (#{id},#{username},#{password},#{email},#{role})
+    </insert>
+
 </mapper>
 

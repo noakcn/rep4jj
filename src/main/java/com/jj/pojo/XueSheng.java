@@ -18,6 +18,12 @@ public class XueSheng {
     private Date ruxueDate;
     private String banjiId;
 
+
+    public XueSheng() {
+        createDate=new Date();
+        this.enable=Enable.ENABLE;
+    }
+
     public String getUserId() {
         return userId;
     }

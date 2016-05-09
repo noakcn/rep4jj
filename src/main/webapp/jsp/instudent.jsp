@@ -208,9 +208,34 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
+                        <c:if test="${result=='success'}">
+                            <div class="alert alert-block alert-success">
+                                <button type="button" class="close" data-dismiss="alert">
+                                    <i class="ace-icon fa fa-times"></i>
+                                </button>
+                                <p>
+                                    <strong>
+                                        <i class="ace-icon fa fa-check"></i>
+                                            ${msg}
+                                    </strong>
+                                </p>
+                            </div>
+                        </c:if>
+                        <c:if test="${result=='fail'}">
+                            <div class="alert alert-danger">
+                                <button type="button" class="close" data-dismiss="alert">
+                                    <i class="ace-icon fa fa-times"></i>
+                                </button>
 
+                                <strong>
+                                    <i class="ace-icon fa fa-times"></i>
+                                    ${msg}
+                                </strong>
+                                <br>
+                            </div>
+                        </c:if>
                         <sf:form enctype="multipart/form-data" class="form-horizontal" method="post"
-                                 action="admin/doEditProduct.htm" modelAttribute="requestObject">
+                                 action="info/import/students.do" modelAttribute="requestObject">
                             <div class="space-4"></div>
 
                             <div class="form-group">
@@ -257,7 +282,7 @@
                                             <div class="form-group">
                                                 <div class="col-xs-12">
                                                     <!-- #section:custom/file-input -->
-                                                    <input type="file" id="id-input-file-2"/>
+                                                    <input type="file" id="id-input-file-2" name="file"/>
                                                 </div>
                                             </div>
                                         </div>
