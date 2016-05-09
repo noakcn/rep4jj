@@ -29,7 +29,8 @@ public class SystemSettingController {
     private GetXueyuanListService getXueyuanListService;
     @Autowired
     private GetZhuanyeListService getZhuanyeListService;
-
+    @Autowired
+    private GetBanjiListService banjiListService;
 
     @RequestMapping("/xueyuan/setting.do")
     public String xueyuansetting(XueyuanSettingRequest requestObject, HttpServletRequest request) {
@@ -50,16 +51,22 @@ public class SystemSettingController {
         zhuanyeSettingService.add(requestObject, request);
         return "jsp/zhuanyesetting";
     }
+
     @RequestMapping("/zhuanye/get/list.do")
     @ResponseBody
     public String zhuanyeGetList(HttpServletRequest request, HttpServletResponse response) {
         return getZhuanyeListService.getList(request);
     }
 
-
     @RequestMapping("/banji/setting.do")
     public String banjisetting(BanjiSettingRequest requestObject, HttpServletRequest request) {
         banjiSettingService.add(requestObject, request);
         return "jsp/banjisetting";
+    }
+
+    @RequestMapping("/banji/get/list.do")
+    @ResponseBody
+    public String banjiGetList(HttpServletRequest request, HttpServletResponse response) {
+        return banjiListService.getList(request);
     }
 }

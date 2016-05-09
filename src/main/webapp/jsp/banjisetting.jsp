@@ -262,7 +262,7 @@
                                         <div class="col-xs-8 col-sm-11">
                                             <div class="input-group">
                                                 <input class="form-control date-picker" id="id-date-picker-1"
-                                                       type="text"  name="nianji">
+                                                       type="text" name="nianji">
 																	<span class="input-group-addon">
 																		<i class="fa fa-calendar bigger-110"></i>
 																	</span>
@@ -636,8 +636,8 @@
         //link
         $('.date-picker').datepicker({
                     autoclose: true,
-                    format:'yyyy',
-                    viewMode:'years',
+                    format: 'yyyy',
+                    viewMode: 'years',
                     minViewMode: 'years',
 
                 })

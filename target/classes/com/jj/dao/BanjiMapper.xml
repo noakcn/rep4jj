@@ -10,6 +10,7 @@
 
     <select id="findAll" resultType="com.jj.pojo.Banji">
       SELECT * FROM banji WHERE zhuanye_id=#{zhuanyeId}
+      ORDER BY mingcheng
     </select>
 
     <select id="findOne" resultType="com.jj.pojo.Banji">

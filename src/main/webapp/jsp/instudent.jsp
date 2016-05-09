@@ -197,7 +197,8 @@
                         <!-- /section:basics/sidebar.options -->
                     </div><!-- /.pull-left -->
                 </div><!-- /.ace-settings-box -->
-            </div><!-- /.ace-settings-container -->
+            </div>
+            <!-- /.ace-settings-container -->
 
             <div class="page-content-area">
                 <div class="page-header">
@@ -207,46 +208,48 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <!-- PAGE CONTENT BEGINS -->
-                        <form class="form-horizontal" role="form">
+
+                        <sf:form enctype="multipart/form-data" class="form-horizontal" method="post"
+                                 action="admin/doEditProduct.htm" modelAttribute="requestObject">
                             <div class="space-4"></div>
+
                             <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="form-field-select-1">
+                                <label class="col-sm-3 control-label no-padding-right">
                                     学院 </label>
+
                                 <div class="col-sm-5">
-                                    <select class="form-control" id="form-field-select-1">
+                                    <select class="chosen-select" id="xueyuan_select" name="xueyuanId"
+                                            data-placeholder="请选择学院" onchange="getZhuanye()">
                                         <option value=""></option>
-                                        <option value="AL">Alabama</option>
-                                        <option value="WY">Wyoming</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="space-4"></div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="form-field-select-1">
+                                <label class="col-sm-3 control-label no-padding-right">
                                     专业 </label>
+
                                 <div class="col-sm-5">
-                                    <select class="form-control" id="form-field-select-1">
+                                    <select class="chosen-select" id="zhuanye_select" name="zhuanyeId"
+                                            data-placeholder="请选择专业" onchange="getBanji()">
                                         <option value=""></option>
-                                        <option value="AL">Alabama</option>
-                                        <option value="WY">Wyoming</option>
                                     </select>
                                 </div>
                             </div>
+                            <div class="space-4"></div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="form-field-select-1">
+                                <label class="col-sm-3 control-label no-padding-right">
                                     班级 </label>
                                 <div class="col-sm-5">
-                                    <select class="form-control" id="form-field-select-1">
+                                    <select class="chosen-select" id="banji_select" name="banjiId"
+                                            data-placeholder="请选择班级">
                                         <option value=""></option>
-                                        <option value="AL">Alabama</option>
-                                        <option value="WY">Wyoming</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="space-4"></div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="form-field-select-1">
+                                <label class="col-sm-3 control-label no-padding-right">
                                     文件 </label>
                                 <div class="col-sm-5">
                                     <div class="widget-body">
@@ -254,21 +257,19 @@
                                             <div class="form-group">
                                                 <div class="col-xs-12">
                                                     <!-- #section:custom/file-input -->
-                                                    <input type="file" id="id-input-file-2" />
+                                                    <input type="file" id="id-input-file-2"/>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="clearfix form-actions">
                                 <div class="col-md-offset-3 col-md-9">
-                                    <button class="btn btn-info" type="button">
+                                    <button class="btn btn-info" type="submit">
                                         <i class="ace-icon fa fa-check bigger-110"></i>
                                         导入
                                     </button>
-
                                     &nbsp; &nbsp; &nbsp;
                                     <button class="btn" type="reset">
                                         <i class="ace-icon fa fa-undo bigger-110"></i>
@@ -276,13 +277,7 @@
                                     </button>
                                 </div>
                             </div>
-
-
-                        </form>
-
-
-
-
+                        </sf:form>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div>
@@ -368,27 +363,27 @@
                                                         <li>
                                                             <a href="#" class="tooltip-info" data-rel="tooltip"
                                                                title="View">
-																			<span class="blue">
-																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																			</span>
+    <span class="blue">
+    <i class="ace-icon fa fa-search-plus bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
 
                                                         <li>
                                                             <a href="#" class="tooltip-success" data-rel="tooltip"
                                                                title="Edit">
-																			<span class="green">
-																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																			</span>
+    <span class="green">
+    <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
 
                                                         <li>
                                                             <a href="#" class="tooltip-error" data-rel="tooltip"
                                                                title="Delete">
-																			<span class="red">
-																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																			</span>
+    <span class="red">
+    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -446,27 +441,27 @@
                                                         <li>
                                                             <a href="#" class="tooltip-info" data-rel="tooltip"
                                                                title="View">
-																			<span class="blue">
-																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																			</span>
+    <span class="blue">
+    <i class="ace-icon fa fa-search-plus bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
 
                                                         <li>
                                                             <a href="#" class="tooltip-success" data-rel="tooltip"
                                                                title="Edit">
-																			<span class="green">
-																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																			</span>
+    <span class="green">
+    <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
 
                                                         <li>
                                                             <a href="#" class="tooltip-error" data-rel="tooltip"
                                                                title="Delete">
-																			<span class="red">
-																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																			</span>
+    <span class="red">
+    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -524,27 +519,27 @@
                                                         <li>
                                                             <a href="#" class="tooltip-info" data-rel="tooltip"
                                                                title="View">
-																			<span class="blue">
-																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																			</span>
+    <span class="blue">
+    <i class="ace-icon fa fa-search-plus bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
 
                                                         <li>
                                                             <a href="#" class="tooltip-success" data-rel="tooltip"
                                                                title="Edit">
-																			<span class="green">
-																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																			</span>
+    <span class="green">
+    <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
 
                                                         <li>
                                                             <a href="#" class="tooltip-error" data-rel="tooltip"
                                                                title="Delete">
-																			<span class="red">
-																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																			</span>
+    <span class="red">
+    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -602,27 +597,27 @@
                                                         <li>
                                                             <a href="#" class="tooltip-info" data-rel="tooltip"
                                                                title="View">
-																			<span class="blue">
-																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																			</span>
+    <span class="blue">
+    <i class="ace-icon fa fa-search-plus bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
 
                                                         <li>
                                                             <a href="#" class="tooltip-success" data-rel="tooltip"
                                                                title="Edit">
-																			<span class="green">
-																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																			</span>
+    <span class="green">
+    <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
 
                                                         <li>
                                                             <a href="#" class="tooltip-error" data-rel="tooltip"
                                                                title="Delete">
-																			<span class="red">
-																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																			</span>
+    <span class="red">
+    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -680,27 +675,27 @@
                                                         <li>
                                                             <a href="#" class="tooltip-info" data-rel="tooltip"
                                                                title="View">
-																			<span class="blue">
-																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
-																			</span>
+    <span class="blue">
+    <i class="ace-icon fa fa-search-plus bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
 
                                                         <li>
                                                             <a href="#" class="tooltip-success" data-rel="tooltip"
                                                                title="Edit">
-																			<span class="green">
-																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-																			</span>
+    <span class="green">
+    <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
 
                                                         <li>
                                                             <a href="#" class="tooltip-error" data-rel="tooltip"
                                                                title="Delete">
-																			<span class="red">
-																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
-																			</span>
+    <span class="red">
+    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+    </span>
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -724,25 +719,25 @@
         <div class="footer-inner">
             <!-- #section:basics/footer -->
             <div class="footer-content">
-						<span class="bigger-120">
-							<span class="blue bolder">Ace</span>
-							Application &copy; 2013-2014
-						</span>
+    <span class="bigger-120">
+    <span class="blue bolder">Ace</span>
+    Application &copy; 2013-2014
+    </span>
 
                 &nbsp; &nbsp;
-						<span class="action-buttons">
-							<a href="#">
-                                <i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
-                            </a>
+    <span class="action-buttons">
+    <a href="#">
+        <i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+    </a>
 
-							<a href="#">
-                                <i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
-                            </a>
+    <a href="#">
+        <i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+    </a>
 
-							<a href="#">
-                                <i class="ace-icon fa fa-rss-square orange bigger-150"></i>
-                            </a>
-						</span>
+    <a href="#">
+        <i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+    </a>
+    </span>
             </div>
 
             <!-- /section:basics/footer -->
@@ -772,14 +767,35 @@
     if ('ontouchstart' in document.documentElement) document.write("<script src='../assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
 </script>
 <script src="../assets/js/bootstrap.min.js"></script>
-
 <!-- page specific plugin scripts -->
-<script src="../assets/js/jquery.dataTables.min.js"></script>
-<script src="../assets/js/jquery.dataTables.bootstrap.js"></script>
+
+<!--[if lte IE 8]>
+<script src="../assets/js/excanvas.min.js"></script>
+<![endif]-->
+<script src="../assets/js/jquery-ui.custom.min.js"></script>
+<script src="../assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="../assets/js/chosen.jquery.min.js"></script>
+<script src="../assets/js/fuelux/fuelux.spinner.min.js"></script>
+<script src="../assets/js/date-time/bootstrap-datepicker.min.js"></script>
+<script src="../assets/js/date-time/bootstrap-timepicker.min.js"></script>
+<script src="../assets/js/date-time/moment.min.js"></script>
+<script src="../assets/js/date-time/daterangepicker.min.js"></script>
+<script src="../assets/js/date-time/bootstrap-datetimepicker.min.js"></script>
+<script src="../assets/js/bootstrap-colorpicker.min.js"></script>
+<script src="../assets/js/jquery.knob.min.js"></script>
+<script src="../assets/js/jquery.autosize.min.js"></script>
+<script src="../assets/js/jquery.inputlimiter.1.3.1.min.js"></script>
+<script src="../assets/js/jquery.maskedinput.min.js"></script>
+<script src="../assets/js/bootstrap-tag.min.js"></script>
+<script src="../assets/js/typeahead.jquery.min.js"></script>
 
 <!-- ace scripts -->
 <script src="../assets/js/ace-elements.min.js"></script>
 <script src="../assets/js/ace.min.js"></script>
+<!-- page specific plugin scripts -->
+<script src="../assets/js/jquery.dataTables.min.js"></script>
+<script src="../assets/js/jquery.dataTables.bootstrap.js"></script>
+
 
 <!-- inline scripts related to this page -->
 <script type="text/javascript">
@@ -787,7 +803,7 @@
     jQuery(function ($) {
         var oTable1 =
                 $('#sample-table-2')
-                //.wrap("<div class='dataTables_borderWrap' />")   //if you are applying horizontal scrolling (sScrollX)
+                //.wrap("<div class='dataTables_borderWrap' />") //if you are applying horizontal scrolling (sScrollX)
                         .dataTable({
                             bAutoWidth: false,
                             "aoColumns": [
@@ -809,27 +825,15 @@
 
                             //"iDisplayLength": 50
                         });
-        /**
-         var tableTools = new $.fn.dataTable.TableTools( oTable1, {
-					"sSwfPath": "../../copy_csv_xls_pdf.swf",
-			        "buttons": [
-			            "copy",
-			            "csv",
-			            "xls",
-						"pdf",
-			            "print"
-			        ]
-			    } );
-         $( tableTools.fnContainer() ).insertBefore('#sample-table-2');
-         */
 
-        $('.chosen-select').chosen({allow_single_deselect:true});
+
+        $('.chosen-select').chosen({allow_single_deselect: true});
         //resize the chosen on window resize
 
         $(window)
                 .off('resize.chosen')
-                .on('resize.chosen', function() {
-                    $('.chosen-select').each(function() {
+                .on('resize.chosen', function () {
+                    $('.chosen-select').each(function () {
                         var $this = $(this);
                         $this.next().css({'width': $this.parent().width()});
                     })
@@ -858,20 +862,81 @@
             return 'left';
         }
 
+        $.ajax({
+            url: "setting/xueyuan/get/list.do",
+            success: function (data) {
+                console.log(data);
+                $("#xueyuan_select").append(data);
+                $("#xueyuan_select").trigger("chosen:updated");
+                $('#xueyuan_select').chosen({allow_single_deselect: true});
+                $("#xueyuan_select")
+                        .off('resize.chosen')
+                        .on('resize.chosen', function () {
+                            $('.chosen-select').each(function () {
+                                var $this = $(this);
+                                $this.next().css({'width': $this.parent().width()});
+                            })
+                        }).trigger('resize.chosen');
+            }
+        });
+
     });
     $('#id-input-file-2').ace_file_input({
-        no_file:'No File ...',
-        btn_choose:'Choose',
-        btn_change:'Change',
-        droppable:false,
-        onchange:null,
-        thumbnail:false //| true | large
+        no_file: 'No File ...',
+        btn_choose: 'Choose',
+        btn_change: 'Change',
+        droppable: false,
+        onchange: null,
+        thumbnail: false//| true | large
         //whitelist:'gif|png|jpg|jpeg'
-         blacklist:'exe'
+        // blacklist:'exe'
         //onchange:''
         //
     });
-
+    function getZhuanye() {
+        var id = $("#xueyuan_select option:selected").val();
+        $.ajax({
+            url: "setting/zhuanye/get/list.do?id=" + id,
+            success: function (data) {
+                console.log(data);
+                $("#zhuanye_select option").remove();
+                $("#zhuanye_select").append(data);
+                $("#zhuanye_select").trigger("chosen:updated");
+                $('#zhuanye_select').chosen({allow_single_deselect: true});
+                $("#zhuanye_select")
+                        .off('resize.chosen')
+                        .on('resize.chosen', function () {
+                            $('#zhuanye_select').each(function () {
+                                var $this = $(this);
+                                $this.next().css({'width': $this.parent().width()});
+                            })
+                        }).trigger('resize.chosen');
+            }
+        });
+    }
+    ;
+    function getBanji() {
+        var id = $("#zhuanye_select option:selected").val();
+        $.ajax({
+            url: "setting/banji/get/list.do?id=" + id,
+            success: function (data) {
+                console.log(data);
+                $("#banji_select option").remove();
+                $("#banji_select").append(data);
+                $("#banji_select").trigger("chosen:updated");
+                $('#banji_select').chosen({allow_single_deselect: true});
+                $("#banji_select")
+                        .off('resize.chosen')
+                        .on('resize.chosen', function () {
+                            $('#zhuanye_select').each(function () {
+                                var $this = $(this);
+                                $this.next().css({'width': $this.parent().width()});
+                            })
+                        }).trigger('resize.chosen');
+            }
+        });
+    }
+    ;
 </script>
 
 <!-- the following scripts are used in demo only for onpage help and you don't need them -->
