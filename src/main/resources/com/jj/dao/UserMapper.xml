@@ -13,5 +13,8 @@
         VALUES (#{id},#{username},#{password},#{email},#{role})
     </insert>
 
+    <update id="delete">
+        UPDATE users SET enable=0 WHERE id=#{id}
+    </update>
 </mapper>
 

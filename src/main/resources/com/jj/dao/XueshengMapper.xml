@@ -2,11 +2,58 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.jj.dao.IJiaoshiDao">
-    <select id="findOne" resultType="com.jj.pojo.Jiaoshi">
-        SELECT * FROM jiaoshi WHERE user_id=#{userId}
-
+<mapper namespace="com.jj.dao.IXueshengDao">
+    <select id="findOne" resultMap="xueshengMap">
+        SELECT x.* ,
+        b.*
+        FROM xuesheng  x LEFT JOIN banji b ON b.id=x.banji_id
+        WHERE
+        user_id=#{id} AND enable=1
     </select>
 
+    <insert id="save" parameterType="com.jj.pojo.XueSheng">
+        INSERT INTO xuesheng(user_id, xuehao, xingming, xingbie, create_date, enable, ruxue_date, banji_id)
+        VALUES (#{userId},#{xuehao},#{xingming},#{xingbie},#{createDate},#{enable},#{ruxueDate},#{banjiId})
+    </insert>
+    <resultMap id="xueshengMap" type="com.jj.pojo.XueSheng">
+        <id column="user_id" property="userId"/>
+        <result column="xuehao" property="xuehao"/>
+        <result column="xingming" property="xingming"/>
+        <result column="xingbie" property="xingbie"/>
+        <result column="create_date" property="createDate"/>
+        <result column="enable" property="enable"/>
+        <result column="ruxue_date" property="ruxueDate"/>
+        <result column="banji_id" property="banjiId"/>
+        <association property="banji" resultMap="banjiMap"/>
+    </resultMap>
+    <resultMap id="banjiMap" type="com.jj.pojo.Banji">
+        <id column="banji_id" property="id"/>
+        <result column="mingcheng" property="mingcheng"/>
+    </resultMap>
+    <select id="findAll" resultMap="xueshengMap">
+        SELECT * FROM xuesheng WHERE banji_id=#{banjiId}
+        AND enable=1
+    </select>
+
+    <select id="findAllByConditon" resultMap="xueshengMap">
+        SELECT x.* ,
+        b.*
+        FROM xuesheng  x LEFT JOIN banji b ON b.id=x.banji_id
+        WHERE banji_id=#{banjiId}
+        AND xingming like concat('%',#{xingming},'%')
+        AND x.enable=1
+    </select>
+
+    <update id="delete">
+        UPDATE xuesheng SET enable=0 WHERE user_id=#{id}
+    </update>
+
+    <update id="update">
+        UPDATE xuesheng
+        SET
+        xingming=#{xingming},
+        xingbie=#{xingbie}
+        WHERE user_id=#{userId}
+    </update>
 </mapper>
 

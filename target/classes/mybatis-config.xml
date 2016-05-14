@@ -6,5 +6,6 @@
         <typeHandler javaType="com.jj.pojo.enumclass.Enable" handler="org.apache.ibatis.type.EnumOrdinalTypeHandler"/>
         <typeHandler javaType="com.jj.pojo.enumclass.Role" handler="org.apache.ibatis.type.EnumOrdinalTypeHandler"/>
         <typeHandler javaType="com.jj.pojo.enumclass.Sex" handler="org.apache.ibatis.type.EnumOrdinalTypeHandler"/>
+        <typeHandler javaType="com.jj.pojo.enumclass.KechengType" handler="org.apache.ibatis.type.EnumOrdinalTypeHandler"/>
     </typeHandlers>
 </configuration>

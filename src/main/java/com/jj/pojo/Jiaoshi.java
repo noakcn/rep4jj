@@ -1,6 +1,7 @@
 package com.jj.pojo;
 
 import com.jj.pojo.enumclass.Enable;
+import com.jj.pojo.enumclass.Sex;
 
 import java.util.Date;
 
@@ -11,10 +12,14 @@ public class Jiaoshi {
     private String userId;
     private String gonghao;
     private String xingming;
-    private String xingbie ;
+    private Sex xingbie ;
     private Date createDate;
     private Enable enable;
     private Date jobDate;
+
+    public Jiaoshi() {
+        createDate=new Date();
+    }
 
     public String getUserId() {
         return userId;
@@ -40,11 +45,11 @@ public class Jiaoshi {
         this.xingming = xingming;
     }
 
-    public String getXingbie() {
+    public Sex getXingbie() {
         return xingbie;
     }
 
-    public void setXingbie(String xingbie) {
+    public void setXingbie(Sex xingbie) {
         this.xingbie = xingbie;
     }
 

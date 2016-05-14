@@ -17,6 +17,13 @@ public enum Sex {
         this.content = content;
     }
 
+    public static Sex findByCode(int code){
+        for(Sex s:Sex.values()){
+            if(s.getCode()==code)
+                return s;
+        }
+        return UNKNOW;
+    }
     public int getCode() {
         return code;
     }

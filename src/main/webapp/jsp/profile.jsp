@@ -1,6 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+%>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+        <base href="<%=basePath%>">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
 		<title>User Profile Page - Ace Admin</title>
@@ -355,7 +364,7 @@
 								</li>
 
 								<li>
-									<a href="profile.html">
+									<a href="profile.jsp">
 										<i class="ace-icon fa fa-user"></i>
 										Profile
 									</a>
@@ -505,7 +514,7 @@
 							</li>
 
 							<li class="">
-								<a href="elements.html">
+								<a href="updatestudent.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Elements
 								</a>
@@ -733,7 +742,7 @@
 
 						<ul class="submenu">
 							<li class="active">
-								<a href="profile.html">
+								<a href="profile.jsp">
 									<i class="menu-icon fa fa-caret-right"></i>
 									User Profile
 								</a>

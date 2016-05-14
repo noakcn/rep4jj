@@ -2,16 +2,19 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.jj.dao.IXueshengDao">
-    <select id="findOne" resultType="com.jj.pojo.XueSheng">
-        SELECT * FROM xuesheng WHERE user_id=#{userId}
+<mapper namespace="com.jj.dao.IJiaoshiDao">
+    <select id="findOne" resultType="com.jj.pojo.Jiaoshi">
+        SELECT * FROM jiaoshi WHERE user_id=#{userId}
 
     </select>
 
-    <insert id="save" parameterType="com.jj.pojo.XueSheng">
-        INSERT INTO xuesheng(user_id, xuehao, xingming, xingbie, create_date, enable, ruxue_date, banji_id)
-        VALUES (#{userId},#{xuehao},#{xingming},#{xingbie},#{createDate},#{enable},#{ruxueDate},#{banjiId})
+    <insert id="save" parameterType="com.jj.pojo.Jiaoshi">
+        INSERT INTO jiaoshi(user_id, gonghao, xingming, xingbie, create_date, job_date)
+        VALUES (#{userId},#{gonghao},#{xingming},#{xingbie},#{createDate},#{jobDate})
     </insert>
 
+    <select id="findAll" resultType="com.jj.pojo.Jiaoshi">
+        select user_id AS userId, gonghao, xingming, xingbie, create_date AS createDate, job_date AS jobDate from jiaoshi WHERE enable=1;
+    </select>
 </mapper>
 

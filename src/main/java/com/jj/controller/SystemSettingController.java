@@ -3,6 +3,7 @@ package com.jj.controller;
 import com.alibaba.fastjson.JSON;
 import com.jj.pojo.ZhuanyeSettingRequest;
 import com.jj.request.BanjiSettingRequest;
+import com.jj.request.KechengSettingRequest;
 import com.jj.request.XueyuanSettingRequest;
 import com.jj.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,8 @@ public class SystemSettingController {
     private GetZhuanyeListService getZhuanyeListService;
     @Autowired
     private GetBanjiListService banjiListService;
+    @Autowired
+    private KechengSettingService kechengSettingService;
 
     @RequestMapping("/xueyuan/setting.do")
     public String xueyuansetting(XueyuanSettingRequest requestObject, HttpServletRequest request) {
@@ -68,5 +71,11 @@ public class SystemSettingController {
     @ResponseBody
     public String banjiGetList(HttpServletRequest request, HttpServletResponse response) {
         return banjiListService.getList(request);
+    }
+
+    @RequestMapping("/kecheng/setting.do")
+    public String kechengSetting(KechengSettingRequest requestObject, HttpServletRequest request) {
+         kechengSettingService.save(requestObject,request);
+        return "jsp/kechengsetting";
     }
 }

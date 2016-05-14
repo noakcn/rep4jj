@@ -17,11 +17,20 @@ public class XueSheng {
     private Enable enable;
     private Date ruxueDate;
     private String banjiId;
+    private Banji banji;
 
 
     public XueSheng() {
         createDate=new Date();
         this.enable=Enable.ENABLE;
+    }
+
+    public Banji getBanji() {
+        return banji;
+    }
+
+    public void setBanji(Banji banji) {
+        this.banji = banji;
     }
 
     public String getUserId() {

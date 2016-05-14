@@ -6,6 +6,7 @@ import com.jj.dao.IXueshengDao;
 import com.jj.pojo.Jiaoshi;
 import com.jj.pojo.User;
 import com.jj.pojo.XueSheng;
+import com.jj.pojo.enumclass.Enable;
 import com.jj.pojo.enumclass.Role;
 import com.jj.request.LoginRequest;
 import com.jj.utils.UUIDUtils;
@@ -41,6 +42,8 @@ public class UserController {
         String out = "";
         if (user == null) {
             out = "用户不存在";
+        } else if (user.getEnable().equals(Enable.DISABLE)) {
+            out = "账号被冻结，请联系管理员";
         } else if (user.getPassword().equals(loginRequest.getPassword())) {
 
             switch (user.getRole()) {

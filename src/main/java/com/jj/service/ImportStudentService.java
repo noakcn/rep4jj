@@ -8,6 +8,7 @@ import com.jj.pojo.enumclass.Enable;
 import com.jj.pojo.enumclass.Role;
 import com.jj.pojo.enumclass.Sex;
 import com.jj.request.ImportStudentRequest;
+import com.jj.response.XueShengResponse;
 import com.jj.utils.ExcelReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,6 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -35,7 +37,9 @@ public class ImportStudentService {
     private SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
     public boolean importStudent(ImportStudentRequest requestObject, HttpServletRequest request) {
-
+        int count=0;
+        //List<XueSheng> xueShengList=xueshengDao.findAll(requestObject.getBanjiId());
+        List<XueSheng> xueShengList=new ArrayList<XueSheng>();
         try {
             List<Map<Integer, String>> sheetList = excelReader.readExcelContent(requestObject.getFile().getInputStream());
             if (sheetList != null) {
@@ -63,6 +67,8 @@ public class ImportStudentService {
                     xueSheng.setRuxueDate(sdf.parse(row.get(21)));
                     xueSheng.setBanjiId(requestObject.getBanjiId());
                     xueshengDao.save(xueSheng);
+                    count++;
+                    xueShengList.add(xueSheng);
                 }
             }
         } catch (IOException e) {
@@ -71,7 +77,14 @@ public class ImportStudentService {
             e.printStackTrace();
         }
         request.setAttribute("result","success");
-        request.setAttribute("msg","导入成功");
+        request.setAttribute("msg","导入成功"+count+"条");
+
+        List<XueShengResponse> xueShengResponseList=new ArrayList<XueShengResponse>();
+        for(XueSheng xs:xueShengList){
+            XueShengResponse xsResponse=new XueShengResponse(xs);
+            xueShengResponseList.add(xsResponse);
+        }
+        request.setAttribute("xueshenglist",xueShengResponseList);
         return true;
     }
 }

@@ -2,6 +2,7 @@ package com.jj.controller;
 
 import com.jj.request.ImportStudentRequest;
 import com.jj.service.ImportStudentService;
+import com.jj.service.ImportTeacherService;
 import com.jj.utils.ExcelReader;
 import org.aspectj.lang.annotation.After;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,8 @@ public class InfoInputController {
 
     @Autowired
     private ImportStudentService importStudentService;
+    @Autowired
+    private ImportTeacherService importTeacherService;
 
 
     @RequestMapping("/import/students")
@@ -31,6 +34,15 @@ public class InfoInputController {
             request.setAttribute("msg", "导入失败");
         }
         return "jsp/instudent";
+    }
+
+    @RequestMapping("/import/teachers")
+    public String importTeachers(ImportStudentRequest requestObject, HttpServletRequest request) {
+        if (!importTeacherService.importTeacher(requestObject, request)) {
+            request.setAttribute("result", "fail");
+            request.setAttribute("msg", "导入失败");
+        }
+        return "jsp/inteacher";
     }
 
 }

@@ -9,4 +9,6 @@ public interface IUserDao {
     User findOne(User user);
 
     int save(User user);
+
+    int delete(String id);
 }
