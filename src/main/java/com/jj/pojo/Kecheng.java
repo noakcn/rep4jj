@@ -3,6 +3,8 @@ package com.jj.pojo;
 import com.jj.pojo.enumclass.KechengType;
 import com.jj.utils.UUIDUtils;
 
+import java.util.List;
+
 /**
  * Created by yewangwang on 2016/5/14.
  */
@@ -14,9 +16,18 @@ public class Kecheng {
     private KechengType type;
     private String xueyuanId;
     private Xueyuan xueyuan;
+    private List<XueSheng> xueShengs;
 
     public Kecheng() {
         id= UUIDUtils.generateId();
+    }
+
+    public List<XueSheng> getXueShengs() {
+        return xueShengs;
+    }
+
+    public void setXueShengs(List<XueSheng> xueShengs) {
+        this.xueShengs = xueShengs;
     }
 
     public String getId() {

@@ -14,10 +14,19 @@ public class User {
     private Role role;
     private Enable enable;
     private String email;
+    private String headImg;
 
     public User() {
         this.id= UUIDUtils.generateId();
 
+    }
+
+    public String getHeadImg() {
+        return "../pic/"+headImg;
+    }
+
+    public void setHeadImg(String headImg) {
+        this.headImg = headImg;
     }
 
     public String getEmail() {

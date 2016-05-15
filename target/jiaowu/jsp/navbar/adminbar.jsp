@@ -50,7 +50,7 @@
     </div><!-- /.sidebar-shortcuts -->
 
     <ul class="nav nav-list">
-        <li class="active">
+        <li >
             <a href="/user/to/index.do">
                 <i class="menu-icon fa fa-tachometer"></i>
                 <span class="menu-text"> 首页 </span>
@@ -150,9 +150,22 @@
 
                     <b class="arrow"></b>
                 </li>
+                <li class="">
+                    <a href="jsp/inchengji.jsp">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        成绩录入
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
             </ul>
         </li>
-
+        <li >
+            <a href="jsp/xuanke.jsp">
+                <i class="menu-icon fa fa-list-alt"></i>
+                <span class="menu-text"> 选课 </span>
+            </a>
+        </li>
         <li class="">
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon fa fa-pencil-square-o"></i>
@@ -212,7 +225,7 @@
 
 
         <li class="">
-            <a href="jsp/profile.html" >
+            <a href="/profile/to/page.do" >
                 <i class="menu-icon fa fa-tag"></i>
                 <span class="menu-text">个人资料</span>
             </a>

@@ -1,10 +1,11 @@
 package com.jj.service;
 
-import com.jj.controller.SystemSettingController;
 import com.jj.dao.IKechengDao;
+import com.jj.dao.IXuankeDao;
 import com.jj.pojo.Kecheng;
+import com.jj.pojo.Xuanke;
 import com.jj.request.GetKechengListRequest;
-import com.jj.request.KechengResponse;
+import com.jj.response.KechengResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,17 +20,28 @@ import java.util.List;
 public class SearchKechengService {
     @Autowired
     private IKechengDao kechengDao;
+    @Autowired
+    private IXuankeDao xuankeDao;
 
-    public void findAll(GetKechengListRequest requestObject, HttpServletRequest request){
+    public void findAll(GetKechengListRequest requestObject, HttpServletRequest request) {
         System.out.println(requestObject);
-        List<Kecheng> kechengs=kechengDao.findAll(requestObject.getXueyuanId(),
-                requestObject.getMingcheng(),null);
-        List<KechengResponse> kechengResponses=new ArrayList<KechengResponse>();
-        for(Kecheng k:kechengs){
-            KechengResponse r=new KechengResponse(k);
+        List<Kecheng> kechengs = kechengDao.findAll(requestObject.getXueyuanId(),
+                requestObject.getMingcheng(), null);
+        List<KechengResponse> kechengResponses = new ArrayList<KechengResponse>();
+        for (Kecheng k : kechengs) {
+            KechengResponse r = new KechengResponse(k);
             kechengResponses.add(r);
+            Xuanke xuanke = xuankeDao.findOne(
+                    (String) request.getSession().getAttribute("id"),
+                    k.getId()
+                    );
+            if(xuanke!=null){
+                r.setStatus("已选");
+            }else{
+                r.setStatus("未选");
+            }
         }
-        request.setAttribute("kechengList",kechengResponses);
+        request.setAttribute("kechengList", kechengResponses);
 
     }
 }

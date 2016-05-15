@@ -7,7 +7,16 @@ public class SearchRequest {
     private String zhuanyeId;
     private String xueyuanId;
     private String banjiId;
+    private String kechengId;
     private String xingming;
+
+    public String getKechengId() {
+        return kechengId;
+    }
+
+    public void setKechengId(String kechengId) {
+        this.kechengId = kechengId;
+    }
 
     public String getZhuanyeId() {
         return zhuanyeId;

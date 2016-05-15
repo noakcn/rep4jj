@@ -45,7 +45,8 @@ public class UserController {
         } else if (user.getEnable().equals(Enable.DISABLE)) {
             out = "账号被冻结，请联系管理员";
         } else if (user.getPassword().equals(loginRequest.getPassword())) {
-
+            request.getSession().setAttribute("id", user.getId());
+            request.getSession().setAttribute("user",user);
             switch (user.getRole()) {
                 case ADMIN:
                     Jiaoshi jiaoshi = jiaoshiDao.findOne(user.getId());
@@ -79,4 +80,6 @@ public class UserController {
 
         return "jsp/index";
     }
+
+
 }

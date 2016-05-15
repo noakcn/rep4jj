@@ -1,10 +1,13 @@
-package com.jj.request;
+package com.jj.response;
 
 import com.jj.pojo.Kecheng;
+import com.jj.pojo.XueSheng;
 import com.jj.pojo.Xueyuan;
 import com.jj.pojo.enumclass.KechengType;
 import com.jj.response.XueyuanResponse;
 import com.jj.utils.UUIDUtils;
+
+import java.util.List;
 
 /**
  * Created by yewangwang on 2016/5/14.
@@ -18,6 +21,8 @@ public class KechengResponse {
     private String typeStr;
     private String xueyuanId;
     private XueyuanResponse xueyuan;
+    private String status;
+    private List<XueShengResponse> xueShengs;
 
     public KechengResponse(Kecheng o) {
         this.id = o.getId();
@@ -26,6 +31,22 @@ public class KechengResponse {
         this.xuefeng = o.getXuefeng();
         this.typeStr = o.getType().getContent();
         this.xueyuan = new XueyuanResponse(o.getXueyuan());
+    }
+
+    public List<XueShengResponse> getXueShengs() {
+        return xueShengs;
+    }
+
+    public void setXueShengs(List<XueShengResponse> xueShengs) {
+        this.xueShengs = xueShengs;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public String getTypeStr() {

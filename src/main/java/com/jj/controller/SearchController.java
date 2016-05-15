@@ -34,6 +34,8 @@ public class SearchController {
         return "jsp/searchstudent";
     }
 
+
+
     @RequestMapping("/delete/student")
     public String deleteStudent(HttpServletRequest request) {
         deleteStudentService.delete(request);

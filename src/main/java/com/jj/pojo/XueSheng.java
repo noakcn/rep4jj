@@ -19,10 +19,20 @@ public class XueSheng {
     private String banjiId;
     private Banji banji;
 
+    private Double chengji;
+
 
     public XueSheng() {
         createDate=new Date();
         this.enable=Enable.ENABLE;
+    }
+
+    public Double getChengji() {
+        return chengji;
+    }
+
+    public void setChengji(Double chengji) {
+        this.chengji = chengji;
     }
 
     public Banji getBanji() {

@@ -20,6 +20,7 @@ public class GetKechengListRequest {
     }
 
     public String getMingcheng() {
+        if(StringUtils.isEmpty(mingcheng))return null;
         return mingcheng;
     }
 

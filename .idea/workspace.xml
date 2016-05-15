@@ -2,165 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="25b7fda3-598b-4a76-a930-fbf351ae1952" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/jj/controller/SearchController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/jj/request/SearchRequest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/jj/response/BanjiResponse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/jj/response/JiaoshiResponse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/jj/response/XueShengResponse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/jj/service/ImportTeacherService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/jj/service/SearchStudentService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/jj/utils/DateUtils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/controller/SearchController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/request/SearchRequest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/response/BanjiResponse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/response/JiaoshiResponse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/response/XueShengResponse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/service/ImportTeacherService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/service/SearchStudentService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/utils/DateUtils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/controller/SearchController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/dao/IKechengDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/pojo/Kecheng.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/pojo/enumclass/KechengType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/request/GetKechengListRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/request/KechengResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/request/KechengSettingRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/request/SearchRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/request/UpdateStudentRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/response/BanjiResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/response/JiaoshiResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/response/XueShengResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/DeleteStudentService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/ImportTeacherService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/KechengSettingService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/SearchKechengService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/SearchStudentService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/ToUpdateStudentService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/UpdateStudentService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/utils/Containts.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/utils/DateUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/jj/dao/KechengMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/inteacher.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/kechengsearch.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/kechengsetting.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/searchstudent.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/updatestudent.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/inteacher.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/searchstudent.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/elements.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/controller/KechengController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/controller/ProfileController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/dao/IChengjiDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/dao/IXuankeDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/pojo/Chengji.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/pojo/Xuanke.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/request/ChengjiResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/request/EditAvatarRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/request/XuankeRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/EditAvatarService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/FindOneCourseService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/GetProfileInfoService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/TuixuanService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/XuankeService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/jj/dao/ChengjiMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/jj/dao/XuankeMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/inchengji.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/xuanke.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jj/controller/SearchController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jj/dao/IKechengDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jj/request/KechengResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jj/request/SearchRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jj/service/SearchKechengService.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/controller/InfoInputController.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/controller/InfoInputController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/controller/SystemSettingController.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/controller/SystemSettingController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/controller/UserController$1.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/controller/UserController$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/dao/IJiaoshiDao.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/dao/IJiaoshiDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/dao/IUserDao.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/dao/IUserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/dao/IXueshengDao.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/dao/IXueshengDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/pojo/Jiaoshi.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/pojo/Jiaoshi.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/pojo/Kecheng.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/pojo/Kecheng.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/pojo/User.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/pojo/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/pojo/XueSheng.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/pojo/XueSheng.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/pojo/enumclass/Sex.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/pojo/enumclass/Sex.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/service/ImportStudentService.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/service/ImportStudentService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/request/GetKechengListRequest.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/request/GetKechengListRequest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/utils/UUIDUtils.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/utils/UUIDUtils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu.war" afterPath="$PROJECT_DIR$/target/jiaowu.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/controller/InfoInputController.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/controller/InfoInputController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/controller/SystemSettingController.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/controller/SystemSettingController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/controller/UserController$1.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/controller/UserController$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/controller/UserController.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/IJiaoshiDao.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/IJiaoshiDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/IUserDao.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/IUserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/IXueshengDao.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/IXueshengDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/pojo/Jiaoshi.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/pojo/Jiaoshi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/pojo/XueSheng.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/pojo/XueSheng.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/pojo/enumclass/Sex.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/pojo/enumclass/Sex.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/service/ImportStudentService.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/service/ImportStudentService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/pojo/User.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/pojo/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/request/GetKechengListRequest.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/request/GetKechengListRequest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/request/KechengResponse.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/request/KechengResponse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/service/SearchKechengService.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/service/SearchKechengService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/utils/UUIDUtils.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/utils/UUIDUtils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/controller/InfoInputController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/controller/InfoInputController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/controller/SystemSettingController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/controller/SystemSettingController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/controller/SearchController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/controller/SearchController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/dao/IJiaoshiDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/dao/IJiaoshiDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/dao/IKechengDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/dao/IKechengDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/dao/IUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/dao/IUserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/dao/IXueShengDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/dao/IXueShengDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/pojo/Jiaoshi.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/pojo/Jiaoshi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/pojo/Kecheng.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/pojo/Kecheng.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/pojo/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/pojo/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/pojo/XueSheng.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/pojo/XueSheng.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/pojo/enumclass/Sex.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/pojo/enumclass/Sex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/service/ImportStudentService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/ImportStudentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/jj/dao/JiaoShiMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/jj/dao/JiaoShiMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/request/GetKechengListRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/request/GetKechengListRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/request/SearchRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/request/SearchRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/service/SearchKechengService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/SearchKechengService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/utils/UUIDUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/utils/UUIDUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/jj/dao/KechengMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/jj/dao/KechengMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/jj/dao/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/jj/dao/UserMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/jj/dao/XueshengMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/jj/dao/XueshengMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/ajax/ajax.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/ajax/ajax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/blank.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/blank.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/buttons.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/buttons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/calendar.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/calendar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/dropzone.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/dropzone.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/email.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/email.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/empty.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/empty.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/error-404.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/error-404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/error-500.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/error-500.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/faq.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/faq.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/form-wizard.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/form-wizard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/gallery.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/gallery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/grid.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/grid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/inbox.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/inbox.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/instudent.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/instudent.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/invoice.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/invoice.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/jqgrid.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/jqgrid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/jquery-ui.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/jquery-ui.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/mobile-menu-1.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/mobile-menu-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/mobile-menu-2.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/mobile-menu-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/mobile-menu-3.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/mobile-menu-3.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/navbar/adminbar.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/navbar/adminbar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/navbar/head.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/navbar/head.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/nestable-list.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/nestable-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pricing.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pricing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/timeline.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/timeline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/top-menu.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/top-menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/treeview.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/treeview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/typography.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/typography.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/widgets.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/widgets.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/wysiwyg.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/wysiwyg.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/dao/JiaoshiMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/jj/dao/JiaoshiMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/dao/KechengMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/jj/dao/KechengMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/dao/UserMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/jj/dao/UserMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/dao/XueshengMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/jj/dao/XueshengMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/JiaoshiMapper.xml" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/JiaoshiMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/KechengMapper.xml" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/KechengMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/UserMapper.xml" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/UserMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/XueshengMapper.xml" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/XueshengMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/mybatis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/ajax/ajax.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/ajax/ajax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/blank.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/blank.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/buttons.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/buttons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/calendar.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/calendar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/dropzone.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/dropzone.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/email.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/email.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/empty.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/empty.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/error-404.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/error-404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/error-500.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/error-500.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/faq.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/faq.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/form-wizard.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/form-wizard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/gallery.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/gallery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/grid.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/grid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/inbox.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/inbox.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/instudent.jsp" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/instudent.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/invoice.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/invoice.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/jqgrid.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/jqgrid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/jquery-ui.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/jquery-ui.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/mobile-menu-1.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/mobile-menu-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/mobile-menu-2.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/mobile-menu-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/mobile-menu-3.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/mobile-menu-3.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/navbar/adminbar.jsp" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/navbar/adminbar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/navbar/head.jsp" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/navbar/head.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/nestable-list.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/nestable-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/pricing.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/pricing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/timeline.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/timeline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/top-menu.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/top-menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/treeview.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/treeview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/typography.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/typography.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/widgets.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/widgets.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/wysiwyg.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/wysiwyg.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/profile.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/profile.html" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/profile.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/profile.jsp" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/profile.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jj/request/KechengResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/response/KechengResponse.java" />
     </list>
     <ignored path="jiaowu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -196,7 +105,45 @@
     <favorites_list name="jiaowu" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="inchengji.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/inchengji.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3285968">
+              <caret line="563" column="39" selection-start-line="563" selection-start-column="25" selection-end-line="563" selection-end-column="39" />
+              <folding>
+                <marker date="1463292811262" expanded="true" signature="18055:18176" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KechengController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/controller/KechengController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+              <folding>
+                <element signature="e#1236#1237#0" expanded="true" />
+                <element signature="e#1290#1291#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindOneCourseService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/FindOneCourseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -220,57 +167,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/utils/ExcelReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/pojo/User.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/xueyuansetting.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/utils/DateUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/instudent.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/profile.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/navbar/head.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/dao/IJiaoshiDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/pojo/Jiaoshi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/response/JiaoshiResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/inteacher.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/controller/InfoInputController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/service/ImportTeacherService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/service/ImportStudentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/request/SearchRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/service/SearchStudentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/pojo/XueSheng.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/jj/dao/JiaoshiMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/response/BanjiResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/response/XueShengResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/dao/IUserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/jj/dao/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/utils/Containts.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/service/DeleteStudentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/request/UpdateStudentRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/pojo/enumclass/Sex.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/dao/IXueshengDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/service/ToUpdateStudentService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/form-elements.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/searchstudent.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/updatestudent.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/jj/service/UpdateStudentService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/jj/dao/XueshengMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/dao/IKechengDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/pojo/Kecheng.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jj/pojo/enumclass/KechengType.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/kecheng.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/jj/controller/SystemSettingController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/kechengsetting.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/jj/request/KechengSettingRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jj/service/KechengSettingService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/navbar/adminbar.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/controller/SearchController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/request/KechengResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jj/service/SearchKechengService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/kechengsearch.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/jj/dao/KechengMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/request/ChengjiResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/pojo/Chengji.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/dao/IChengjiDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/jj/dao/ChengjiMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/request/KechengResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/request/XuankeRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/jj/dao/XuankeMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/service/SearchKechengService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/dao/IXuankeDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jj/request/GetKechengListRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/pojo/Xuanke.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/service/XuankeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/service/TuixuanService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/xuanke.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/ajax/profile.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/service/GetProfileInfoService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/navbar/adminbar.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/jj/dao/XueshengMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/instudent.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/request/EditAvatarRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/controller/ProfileController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/utils/UUIDUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/dao/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/jj/dao/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/pojo/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/service/EditAvatarService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/request/SearchRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/controller/SearchController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/pojo/Kecheng.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/pojo/XueSheng.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/dao/IKechengDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/jj/dao/KechengMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/response/KechengResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/service/FindCourseStudentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/service/FindOneCourseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jj/controller/KechengController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/inchengji.jsp" />
       </list>
     </option>
   </component>
@@ -352,7 +299,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -381,6 +327,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jiaowu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jjproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jiaowu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jiaowu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jjproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -390,6 +368,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jiaowu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jjproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -437,63 +441,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="navbar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jiaowu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jjproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jiaowu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jjproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -642,70 +590,6 @@
               <option name="myItemId" value="jj" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pojo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jiaowu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jjproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pojo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enumclass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jiaowu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jjproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -769,8 +653,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -783,21 +668,21 @@
     <property name="project.structure.proportion" value="0.15820312" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="kecheng.jsp&#9;FILE&#9;file://E:/jjproject/src/main/webapp/jsp/kecheng.jsp&#10;Sex&#9;FILE&#9;file://E:/jjproject/src/main/java/com/jj/pojo/enumclass/Sex.java" />
+    <property name="SearchEverywhereHistoryKey" value="inchengji&#9;FILE&#9;file://E:/jjproject/src/main/webapp/jsp/inchengji.jsp&#10;Usercon&#9;FILE&#9;file://E:/jjproject/src/main/java/com/jj/controller/UserController.java&#10;kecheng.jsp&#9;FILE&#9;file://E:/jjproject/src/main/webapp/jsp/kecheng.jsp&#10;Sex&#9;FILE&#9;file://E:/jjproject/src/main/java/com/jj/pojo/enumclass/Sex.java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\jjproject\src\main\webapp\jsp" />
       <recent name="E:\jjproject\src\main\resources\com\jj\dao" />
+      <recent name="E:\jjproject\src\main\webapp\jsp" />
       <recent name="E:\jjproject\src\main\webapp" />
       <recent name="E:\jjproject\src\main\resources" />
       <recent name="E:\jjproject\jiaowu\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jj.service" />
       <recent name="com.jj.request" />
       <recent name="com.jj.pojo.enumclass" />
       <recent name="com.jj.response" />
-      <recent name="com.jj.service" />
       <recent name="com.jj.dao" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -1327,12 +1212,13 @@
       <workItem from="1462804324484" duration="17643000" />
       <workItem from="1463097734351" duration="636000" />
       <workItem from="1463201265867" duration="11733000" />
-      <workItem from="1463215593211" duration="4982000" />
+      <workItem from="1463215593211" duration="14806000" />
+      <workItem from="1463282123778" duration="9762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102499000" />
+    <option name="totallyTimeSpent" value="122085000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1345,11 +1231,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33279744" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27813506" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1360,20 +1246,20 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2624811" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2677761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3681672" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39228296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1389,9 +1275,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3681672" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33279744" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39228296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27813506" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1399,9 +1285,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40192926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2624811" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2677761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1421,7 +1307,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="102" />
+      <option name="time" value="110" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1430,353 +1316,174 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/utils/DateUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/request/ChengjiResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3275563">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.74367625">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="e#218#219#0" expanded="false" />
+            <element signature="e#248#249#0" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+            <element signature="e#332#333#0" expanded="false" />
+            <element signature="e#397#398#0" expanded="false" />
+            <element signature="e#444#445#0" expanded="false" />
+            <element signature="e#482#483#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/BanjiSettingService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/jj/dao/ChengjiMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6637782">
-          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-          <folding />
+        <state vertical-scroll-proportion="0.44760212">
+          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+          <folding>
+            <marker date="1463221299019" expanded="true" signature="275:376" placeholder="SELECT * FRO... chengjibiao" />
+            <marker date="1463221299019" expanded="true" signature="457:616" placeholder="INSERT INTO chengjibiao... " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/navbar/head.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/dao/IChengjiDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.369287">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding />
+        <state vertical-scroll-proportion="0.49578413">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/request/ImportStudentRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/searchstudent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48490232">
+          <caret line="306" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="612" selection-end-column="0" />
+          <folding>
+            <marker date="1463210626263" expanded="true" signature="19870:19991" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/request/XuankeRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24789207">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/pojo/Jiaoshi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36256325">
-          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding>
-            <element signature="e#943#944#0" expanded="false" />
-            <element signature="e#986#987#0" expanded="false" />
-            <element signature="e#1024#1025#0" expanded="false" />
+            <element signature="e#197#198#0" expanded="false" />
+            <element signature="e#230#231#0" expanded="false" />
+            <element signature="e#282#283#0" expanded="false" />
+            <element signature="e#326#327#0" expanded="false" />
+            <element signature="e#362#363#0" expanded="false" />
+            <element signature="e#394#395#0" expanded="false" />
+            <element signature="e#444#445#0" expanded="false" />
+            <element signature="e#486#487#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/response/JiaoshiResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3310811">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/dao/IJiaoshiDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/ImportTeacherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43338954">
-          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
-          <folding>
-            <element signature="e#1232#1241#0" expanded="false" />
-            <element signature="e#2932#2949#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/ImportStudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="9" selection-start-line="81" selection-start-column="7" selection-end-line="85" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1283#1293#0" expanded="false" />
-            <element signature="e#3068#3086#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/jj/dao/JiaoshiMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22380106">
-          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-          <folding>
-            <marker date="1462973640504" expanded="true" signature="274:319" placeholder="SELECT * FRO... jiaoshi" />
-            <marker date="1462973640504" expanded="true" signature="403:568" placeholder="INSERT INTO jiaoshi... " />
-            <marker date="1462973640504" expanded="true" signature="651:779" placeholder="select * fro... jiaoshi" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/pojo/Banji.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33136094">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding>
-            <element signature="e#608#609#0" expanded="false" />
-            <element signature="e#640#641#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/response/BanjiResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3322091">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/instudent.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-94.13333">
-          <caret line="342" column="73" selection-start-line="342" selection-start-column="73" selection-end-line="342" selection-end-column="73" />
-          <folding>
-            <marker date="1462890117289" expanded="true" signature="18388:18501" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/dao/IUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28330523">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/DeleteStudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7585421">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/pojo/XueSheng.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23690204">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/utils/Containts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38268793">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/inteacher.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.037300177">
-          <caret line="312" column="66" selection-start-line="312" selection-start-column="66" selection-end-line="312" selection-end-column="66" />
-          <folding>
-            <marker date="1462973684939" expanded="true" signature="16306:16419" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/request/SearchRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17706576">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/SearchStudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3322091">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding>
-            <element signature="e#815#833#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/response/XueShengResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29840142">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/pojo/enumclass/Sex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5699831">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/request/UpdateStudentRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/ToUpdateStudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/xueyuansetting.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6">
-          <caret line="241" column="62" selection-start-line="241" selection-start-column="49" selection-end-line="241" selection-end-column="62" />
-          <folding>
-            <marker date="1462809036949" expanded="true" signature="13634:13747" placeholder="..." />
-            <marker date="1462809036949" expanded="true" signature="18946:18978" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/updatestudent.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.8">
-          <caret line="236" column="81" selection-start-line="236" selection-start-column="81" selection-end-line="236" selection-end-column="81" />
-          <folding>
-            <marker date="1463212137868" expanded="true" signature="15547:15660" placeholder="..." />
-            <marker date="1463212137868" expanded="true" signature="20799:20831" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/dao/IXueshengDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/4.2.4.RELEASE/spring-core-4.2.4.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6458333">
-          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.19823009">
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/jj/dao/XueshengMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/pojo/Xuanke.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.4666667">
-          <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.5894988">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
-            <marker date="1463212268602" expanded="true" signature="266:401" placeholder="SELECT x.* ,... xuesheng" />
-            <marker date="1463212268602" expanded="true" signature="485:692" placeholder="INSERT INTO xuesheng... " />
-            <marker date="1463212268602" expanded="true" signature="1518:1566" placeholder="SELECT * FRO... xuesheng" />
-            <marker date="1463212268602" expanded="true" signature="1518:1587" placeholder="SELECT * FRO... xuesheng" />
-            <marker date="1463212268602" expanded="true" signature="1671:1845" placeholder="SELECT * FRO... xuesheng" />
-            <marker date="1463212268602" expanded="true" signature="1671:1868" placeholder="SELECT x.* ,... xuesheng" />
-            <marker date="1463212268602" expanded="true" signature="1917:1965" placeholder="UPDATE xuesh... " />
-            <marker date="1463212268602" expanded="true" signature="2014:2130" placeholder="UPDATE xuesh... " />
+            <element signature="e#291#292#0" expanded="false" />
+            <element signature="e#328#329#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/UpdateStudentService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/jj/dao/XuankeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.56586826">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <marker date="1463223905183" expanded="true" signature="273:373" placeholder="SELECT * FRO... xuankebiao" />
+            <marker date="1463223905183" expanded="true" signature="453:569" placeholder="INSERT INTO xuankebiao... " />
+            <marker date="1463223905183" expanded="true" signature="618:716" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/dao/IXuankeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21703297">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/request/GetKechengListRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3598901">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/SearchKechengService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5412088">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#959#976#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/XuankeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61045533">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/controller/InfoInputController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/TuixuanService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50421584">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/xuanke.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29840142">
-          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/jj/dao/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22340426">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+          <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="72" selection-end-column="0" />
           <folding>
-            <marker date="1463203603167" expanded="true" signature="268:314" placeholder="SELECT * FRO... users" />
-            <marker date="1463203603167" expanded="true" signature="395:509" placeholder="INSERT INTO users... " />
-            <marker date="1463203603167" expanded="true" signature="558:598" placeholder="UPDATE users... " />
+            <marker date="1463232399093" expanded="true" signature="17290:17403" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/pojo/enumclass/KechengType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/ajax/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7777778">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state vertical-scroll-proportion="1.3357016">
+          <caret line="1960" column="42" selection-start-line="1960" selection-start-column="42" selection-end-line="1960" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4777975">
+          <caret line="142" column="4" selection-start-line="142" selection-start-column="4" selection-end-line="151" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/pojo/Kecheng.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/navbar/adminbar.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#396#397#0" expanded="false" />
-            <element signature="e#438#439#0" expanded="false" />
-            <element signature="e#1176#1177#0" expanded="false" />
-            <element signature="e#1208#1209#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/kechengsetting.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.51497">
-          <caret line="246" column="69" selection-start-line="246" selection-start-column="69" selection-end-line="246" selection-end-column="69" />
-          <folding>
-            <marker date="1463218078106" expanded="true" signature="15699:15812" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/request/KechengSettingRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54404145">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state vertical-scroll-proportion="-5.5">
+          <caret line="227" column="40" selection-start-line="227" selection-start-column="40" selection-end-line="227" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1784,126 +1491,316 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="90" selection-start-line="53" selection-start-column="90" selection-end-line="53" selection-end-column="90" />
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/navbar/adminbar.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/avatars/user.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/avatars/profile-pic.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/avatars/avatar4.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/avatars/avatar2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/avatars/avatar3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/avatars/avatar5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/response/BanjiResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4311377">
-          <caret line="112" column="33" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.31871837">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/KechengSettingService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/response/XueShengResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33241758">
+        <state vertical-scroll-proportion="0.63743675">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/jj/dao/XueshengMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60787994">
+          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+          <folding>
+            <marker date="1463285621008" expanded="true" signature="266:401" placeholder="SELECT x.* ,... xuesheng" />
+            <marker date="1463285621008" expanded="true" signature="485:692" placeholder="INSERT INTO xuesheng... " />
+            <marker date="1463285621008" expanded="true" signature="1570:1618" placeholder="SELECT * FRO... xuesheng" />
+            <marker date="1463285621008" expanded="true" signature="1570:1639" placeholder="SELECT * FRO... xuesheng" />
+            <marker date="1463285621008" expanded="true" signature="1723:1897" placeholder="SELECT * FRO... xuesheng" />
+            <marker date="1463285621008" expanded="true" signature="1723:1920" placeholder="SELECT x.* ,... xuesheng" />
+            <marker date="1463285621008" expanded="true" signature="1969:2017" placeholder="UPDATE xuesh... " />
+            <marker date="1463285621008" expanded="true" signature="2066:2182" placeholder="UPDATE xuesh... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/request/ImportStudentRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42495784">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/request/EditAvatarRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#257#258#0" expanded="false" />
+            <element signature="e#283#284#0" expanded="false" />
+            <element signature="e#335#336#0" expanded="false" />
+            <element signature="e#365#366#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/utils/UUIDUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5311973">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/dao/IXueshengDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31871837">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/dao/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/GetProfileInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1412#1430#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/searchstudent.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/jj/dao/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.733334">
-          <caret line="294" column="18" selection-start-line="294" selection-start-column="18" selection-end-line="294" selection-end-column="18" />
+        <state vertical-scroll-proportion="-8.8">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
           <folding>
-            <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1463210626263" expanded="true" signature="19870:19991" placeholder="..." />
+            <marker date="1463290354600" expanded="true" signature="268:314" placeholder="SELECT * FRO... users" />
+            <marker date="1463290354600" expanded="true" signature="395:509" placeholder="INSERT INTO users... " />
+            <marker date="1463290354600" expanded="true" signature="558:598" placeholder="UPDATE users... " />
+            <marker date="1463290354600" expanded="true" signature="654:705" placeholder="UPDATE users... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/response/XueyuanResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3322091">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/request/KechengResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/kechengsearch.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2333333">
-          <caret line="237" column="67" selection-start-line="237" selection-start-column="67" selection-end-line="237" selection-end-column="67" />
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           <folding>
-            <marker date="1463220204089" expanded="true" signature="18227:18340" placeholder="..." />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/request/GetKechengListRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/EditAvatarService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.97619045">
+          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/controller/ProfileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61190474">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/instudent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32777777">
+          <caret line="237" column="97" selection-start-line="236" selection-start-column="24" selection-end-line="237" selection-end-column="97" />
+          <folding>
+            <marker date="1462890117289" expanded="true" signature="18388:18501" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6166667">
+          <caret line="257" column="93" selection-start-line="257" selection-start-column="93" selection-end-line="257" selection-end-column="93" />
+          <folding>
+            <marker date="1463290112728" expanded="true" signature="46109:46222" placeholder="..." />
+            <marker date="1463290112728" expanded="true" signature="57047:58408" placeholder="..." />
+            <marker date="1463290112728" expanded="true" signature="57097:58380" placeholder="..." />
+            <marker date="1463290112728" expanded="true" signature="57149:57420" placeholder="..." />
+            <marker date="1463290112728" expanded="true" signature="57149:58351" placeholder="..." />
+            <marker date="1463290112728" expanded="true" signature="57201:57392" placeholder="..." />
+            <marker date="1463290112728" expanded="true" signature="57645:58321" placeholder="..." />
+            <marker date="1463290112728" expanded="true" signature="57646:58321" placeholder="..." />
+            <marker date="1463290112728" expanded="true" signature="57697:57895" placeholder="..." />
+            <marker date="1463290112728" expanded="true" signature="57797:57823" placeholder="..." />
+            <marker date="1463290112728" expanded="true" signature="57981:58285" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/request/SearchRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
           <folding>
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/SearchKechengService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/pojo/XueSheng.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3316062">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.6020236">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#896#913#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/jj/dao/KechengMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30898875">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        <state vertical-scroll-proportion="-12.6">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
           <folding>
-            <marker date="1463220371669" expanded="true" signature="274:310" placeholder="SELECT * FRO... kecheng" />
-            <marker date="1463220371669" expanded="true" signature="274:331" placeholder="SELECT * FRO... kecheng" />
-            <marker date="1463220371669" expanded="true" signature="413:579" placeholder="INSERT INTO kecheng... " />
-            <marker date="1463220371669" expanded="true" signature="628:670" placeholder="UPDATE keche... " />
+            <marker date="1463292255942" expanded="true" signature="1282:1628" placeholder="SELECT * FRO... kecheng" />
+            <marker date="1463292255942" expanded="true" signature="1282:1686" placeholder="SELECT * FRO... kecheng" />
+            <marker date="1463292255942" expanded="true" signature="1282:1698" placeholder="SELECT kc.*,... xuankebiao" />
+            <marker date="1463292255942" expanded="true" signature="1780:1946" placeholder="INSERT INTO kecheng... " />
+            <marker date="1463292255942" expanded="true" signature="1995:2037" placeholder="UPDATE keche... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/dao/IKechengDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34715027">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/controller/SearchController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/pojo/Kecheng.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45595855">
-          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/controller/SystemSettingController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/response/KechengResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7746114">
-          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+          <folding>
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1154#1155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/service/FindOneCourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jj/controller/KechengController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding>
+            <element signature="e#1236#1237#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/inchengji.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3285968">
+          <caret line="563" column="39" selection-start-line="563" selection-start-column="25" selection-end-line="563" selection-end-column="39" />
+          <folding>
+            <marker date="1463292811262" expanded="true" signature="18055:18176" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

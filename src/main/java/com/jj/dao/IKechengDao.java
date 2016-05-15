@@ -1,6 +1,7 @@
 package com.jj.dao;
 
 import com.jj.pojo.Kecheng;
+import com.jj.pojo.XueSheng;
 import com.jj.pojo.enumclass.KechengType;
 import org.apache.ibatis.annotations.Param;
 
@@ -12,11 +13,14 @@ import java.util.List;
 public interface IKechengDao {
     int save(Kecheng kecheng);
 
-    int findOne(String id);
+    Kecheng findOne(@Param("banjiId")String banjiId,
+                    @Param("kechengId")String kechengId);
 
     List<Kecheng> findAll(@Param("xueyuanId") String xueyuanId,
                           @Param("mingcheng")String mingcheng,
                           @Param("type")KechengType type);
 
     int delete(String id);
+
+
 }

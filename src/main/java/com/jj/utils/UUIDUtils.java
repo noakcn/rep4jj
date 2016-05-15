@@ -15,4 +15,9 @@ public class UUIDUtils {
         accessToken.replace("-", "");
         return accessToken;
     }
+    public static String generateFileName() {
+        String accessToken = UUID.randomUUID().toString();
+        accessToken.replace("-", "");
+        return accessToken;
+    }
 }

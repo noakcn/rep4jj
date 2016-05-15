@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jj.dao.IChengjiDao">
+
+    <select id="findOne" resultType="com.jj.pojo.Chengji">
+        SELECT * FROM chengjibiao
+        WHERE xuesheng_id=#{xueshengId}
+        AND kecheng_id=#{kechengId}
+    </select>
+
+    <insert id="save" parameterType="com.jj.pojo.Chengji">
+      INSERT INTO chengjibiao(xuesheng_id, kecheng_id, chengji, is_bukao, create_date)
+       VALUES (#{xueshengId},#{kechengId},#{chengji},#{isBukao},#{createDate})
+    </insert>
+
+
+</mapper>
+

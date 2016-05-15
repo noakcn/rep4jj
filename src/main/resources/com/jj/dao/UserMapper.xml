@@ -16,5 +16,9 @@
     <update id="delete">
         UPDATE users SET enable=0 WHERE id=#{id}
     </update>
+
+    <update id="updateHeadImg">
+        UPDATE users SET headImg=#{filename} WHERE id=#{id}
+    </update>
 </mapper>
 

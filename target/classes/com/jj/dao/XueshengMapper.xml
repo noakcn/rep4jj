@@ -28,6 +28,7 @@
     </resultMap>
     <resultMap id="banjiMap" type="com.jj.pojo.Banji">
         <id column="banji_id" property="id"/>
+        <result column="nianji" property="nianji"/>
         <result column="mingcheng" property="mingcheng"/>
     </resultMap>
     <select id="findAll" resultMap="xueshengMap">
