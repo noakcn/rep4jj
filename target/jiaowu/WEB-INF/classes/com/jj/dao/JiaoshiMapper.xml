@@ -3,8 +3,11 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.jj.dao.IJiaoshiDao">
+
     <select id="findOne" resultType="com.jj.pojo.Jiaoshi">
-        SELECT * FROM jiaoshi WHERE user_id=#{userId}
+        SELECT jiaoshi.*,
+        jiaoshi.job_date AS jobDate
+         FROM jiaoshi  WHERE user_id=#{userId}
     </select>
 
     <select id="findAllByName" resultType="com.jj.pojo.Jiaoshi">

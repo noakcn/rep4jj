@@ -22,15 +22,16 @@ public class LoginFilter implements Filter {
 
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
-        // UserController controller=ContextLoader.getCurrentWebApplicationContext().getBean(UserController.class);
-        //System.out.println(controller.doLogin(new LoginRequest(),request));
-        User user = (User) request.getSession().getAttribute("user");
-        if (user == null) {
-            HttpServletResponse response=(HttpServletResponse)servletResponse;
-            response.sendRedirect("jsp/login.jsp");
-        }
         System.out.println(request.getServletPath());
+        if(!request.getServletPath().equals("/user/login.do")){
+            User user = (User) request.getSession().getAttribute("user");
+            if (user == null) {
+                HttpServletResponse response=(HttpServletResponse)servletResponse;
+                response.sendRedirect("/jsp/login.jsp");
+            }
+        }
         filterChain.doFilter(request, servletResponse);
+
     }
 
     public void destroy() {

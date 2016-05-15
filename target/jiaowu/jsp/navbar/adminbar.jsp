@@ -1,239 +1,356 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: noak
-  Date: 2016/5/8
-  Time: 11:13
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <div id="sidebar" class="sidebar responsive">
-    <script type="text/javascript">
-        try {
 
-            ace.settings.check('sidebar', 'fixed')
-        } catch (e) {
-        }
-    </script>
+    <c:if test="${role=='ADMIN'}">
+        <ul class="nav nav-list">
+            <li>
+                <a href="/user/to/index.do">
+                    <i class="menu-icon fa fa-tachometer"></i>
+                    <span class="menu-text"> 首页 </span>
+                </a>
 
-    <div class="sidebar-shortcuts" id="sidebar-shortcuts">
-        <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
-            <button class="btn btn-success">
-                <i class="ace-icon fa fa-signal"></i>
-            </button>
+                <b class="arrow"></b>
+            </li>
 
-            <button class="btn btn-info">
-                <i class="ace-icon fa fa-pencil"></i>
-            </button>
+            <li class="">
+                <a href="#" class="dropdown-toggle">
+                    <i class="menu-icon fa fa-desktop"></i>
+                    <span class="menu-text"> 信息查询 </span>
 
-            <!-- #section:basics/sidebar.layout.shortcuts -->
-            <button class="btn btn-warning">
-                <i class="ace-icon fa fa-users"></i>
-            </button>
+                    <b class="arrow fa fa-angle-down"></b>
+                </a>
 
-            <button class="btn btn-danger">
-                <i class="ace-icon fa fa-cogs"></i>
-            </button>
+                <b class="arrow"></b>
 
-            <!-- /section:basics/sidebar.layout.shortcuts -->
-        </div>
+                <ul class="submenu">
+                    <li class="">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            用户查询
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
 
-        <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
-            <span class="btn btn-success"></span>
+                        <b class="arrow"></b>
 
-            <span class="btn btn-info"></span>
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="jsp/searchstudent.jsp">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    学生查询
+                                </a>
 
-            <span class="btn btn-warning"></span>
+                                <b class="arrow"></b>
+                            </li>
 
-            <span class="btn btn-danger"></span>
-        </div>
-    </div><!-- /.sidebar-shortcuts -->
+                            <li class="">
+                                <a href="jsp/searchteacher.jsp">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    教师查询
+                                </a>
 
-    <ul class="nav nav-list">
-        <li>
-            <a href="/user/to/index.do">
-                <i class="menu-icon fa fa-tachometer"></i>
-                <span class="menu-text"> 首页 </span>
-            </a>
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                    </li>
 
-            <b class="arrow"></b>
-        </li>
+                    <li class="">
+                        <a href="jsp/searchchengji.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            成绩查询
+                        </a>
 
-        <li class="">
-            <a href="#" class="dropdown-toggle">
-                <i class="menu-icon fa fa-desktop"></i>
-                <span class="menu-text"> 信息查询 </span>
+                        <b class="arrow"></b>
+                    </li>
 
-                <b class="arrow fa fa-angle-down"></b>
-            </a>
+                    <li class="">
+                        <a href="jsp/kechengsearch.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            课程查询
+                        </a>
 
-            <b class="arrow"></b>
-
-            <ul class="submenu">
-                <li class="">
-                    <a href="#" class="dropdown-toggle">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        用户查询
-                        <b class="arrow fa fa-angle-down"></b>
-                    </a>
-
-                    <b class="arrow"></b>
-
-                    <ul class="submenu">
-                        <li class="">
-                            <a href="jsp/searchstudent.jsp">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                学生查询
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-
-                        <li class="">
-                            <a href="jsp/searchteacher.jsp">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                教师查询
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="">
-                    <a href="jsp/searchchengji.jsp">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        成绩查询
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="jsp/kechengsearch.jsp">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        课程查询
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
+                        <b class="arrow"></b>
+                    </li>
 
 
-            </ul>
-        </li>
+                </ul>
+            </li>
 
-        <li class="">
-            <a href="#" class="dropdown-toggle">
-                <i class="menu-icon fa fa-list"></i>
-                <span class="menu-text"> 信息录入 </span>
+            <li class="">
+                <a href="#" class="dropdown-toggle">
+                    <i class="menu-icon fa fa-list"></i>
+                    <span class="menu-text"> 信息录入 </span>
 
-                <b class="arrow fa fa-angle-down"></b>
-            </a>
+                    <b class="arrow fa fa-angle-down"></b>
+                </a>
 
-            <b class="arrow"></b>
+                <b class="arrow"></b>
 
-            <ul class="submenu">
-                <li class="">
-                    <a href="jsp/instudent.jsp">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        学生信息
-                    </a>
+                <ul class="submenu">
+                    <li class="">
+                        <a href="jsp/instudent.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            学生信息
+                        </a>
 
-                    <b class="arrow"></b>
-                </li>
+                        <b class="arrow"></b>
+                    </li>
 
-                <li class="">
-                    <a href="jsp/inteacher.jsp">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        教师信息
-                    </a>
+                    <li class="">
+                        <a href="jsp/inteacher.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            教师信息
+                        </a>
 
-                    <b class="arrow"></b>
-                </li>
-                <li class="">
-                    <a href="jsp/inchengji.jsp">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        成绩录入
-                    </a>
+                        <b class="arrow"></b>
+                    </li>
 
-                    <b class="arrow"></b>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="jsp/xuanke.jsp">
-                <i class="menu-icon fa fa-list-alt"></i>
-                <span class="menu-text"> 选课 </span>
-            </a>
-        </li>
-        <li class="">
-            <a href="#" class="dropdown-toggle">
-                <i class="menu-icon fa fa-pencil-square-o"></i>
-                <span class="menu-text"> 系统设置 </span>
+                </ul>
+            </li>
 
-                <b class="arrow fa fa-angle-down"></b>
-            </a>
+            <li class="">
+                <a href="#" class="dropdown-toggle">
+                    <i class="menu-icon fa fa-pencil-square-o"></i>
+                    <span class="menu-text"> 系统设置 </span>
 
-            <b class="arrow"></b>
+                    <b class="arrow fa fa-angle-down"></b>
+                </a>
 
-            <ul class="submenu">
-                <li class="">
-                    <a href="jsp/xueyuansetting.jsp">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        学院设置
-                    </a>
+                <b class="arrow"></b>
 
-                    <b class="arrow"></b>
-                </li>
+                <ul class="submenu">
+                    <li class="">
+                        <a href="jsp/xueyuansetting.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            学院设置
+                        </a>
 
-                <li class="">
-                    <a href="jsp/zhuanyesetting.jsp">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        专业设置
-                    </a>
+                        <b class="arrow"></b>
+                    </li>
 
-                    <b class="arrow"></b>
-                </li>
+                    <li class="">
+                        <a href="jsp/zhuanyesetting.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            专业设置
+                        </a>
 
-                <li class="">
-                    <a href="jsp/banjisetting.jsp">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        班级设置
-                    </a>
-                    <b class="arrow"></b>
-                </li>
-                <li class="">
-                    <a href="jsp/kechengsetting.jsp">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        课程设置
-                    </a>
-                    <b class="arrow"></b>
-                </li>
+                        <b class="arrow"></b>
+                    </li>
 
-            </ul>
-        </li>
+                    <li class="">
+                        <a href="jsp/banjisetting.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            班级设置
+                        </a>
+                        <b class="arrow"></b>
+                    </li>
+                    <li class="">
+                        <a href="jsp/kechengsetting.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            课程设置
+                        </a>
+                        <b class="arrow"></b>
+                    </li>
 
-        <li class="">
-            <a href="calendar.html">
-                <i class="menu-icon fa fa-calendar"></i>
+                </ul>
+            </li>
+
+            <li class="">
+                <a href="/profile/to/page.do">
+                    <i class="menu-icon fa fa-tag"></i>
+                    <span class="menu-text">个人资料</span>
+                </a>
+
+            </li>
+
+        </ul>
+        <!-- /.nav-list -->
+    </c:if>
+    <c:if test="${role=='TEACHER'}">
+        <ul class="nav nav-list">
+            <li>
+                <a href="/user/to/index.do">
+                    <i class="menu-icon fa fa-tachometer"></i>
+                    <span class="menu-text"> 首页 </span>
+                </a>
+
+                <b class="arrow"></b>
+            </li>
+
+            <li class="">
+                <a href="#" class="dropdown-toggle">
+                    <i class="menu-icon fa fa-desktop"></i>
+                    <span class="menu-text"> 信息查询 </span>
+
+                    <b class="arrow fa fa-angle-down"></b>
+                </a>
+
+                <b class="arrow"></b>
+
+                <ul class="submenu">
+
+                    <li class="">
+                        <a href="jsp/searchstudent.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            学生查询
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+
+                    <li class="">
+                        <a href="jsp/kechengsearch.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            课程查询
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="">
+                <a href="#" class="dropdown-toggle">
+                    <i class="menu-icon fa fa-list"></i>
+                    <span class="menu-text"> 信息录入 </span>
+
+                    <b class="arrow fa fa-angle-down"></b>
+                </a>
+
+                <b class="arrow"></b>
+
+                <ul class="submenu">
+
+                    <li class="">
+                        <a href="jsp/inchengji.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            成绩录入
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="">
+                <a href="#" class="dropdown-toggle">
+                    <i class="menu-icon fa fa-pencil-square-o"></i>
+                    <span class="menu-text"> 系统设置 </span>
+
+                    <b class="arrow fa fa-angle-down"></b>
+                </a>
+
+                <b class="arrow"></b>
+
+                <ul class="submenu">
+
+
+                    <li class="">
+                        <a href="jsp/banjisetting.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            班级设置
+                        </a>
+                        <b class="arrow"></b>
+                    </li>
+                    <li class="">
+                        <a href="jsp/kechengsetting.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            课程设置
+                        </a>
+                        <b class="arrow"></b>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="">
+                <a href="jsp/calendar.jsp">
+                    <i class="menu-icon fa fa-calendar"></i>
 							<span class="menu-text">
 								排课
 							</span>
-            </a>
+                </a>
 
-        </li>
+            </li>
 
 
-        <li class="">
-            <a href="/profile/to/page.do">
-                <i class="menu-icon fa fa-tag"></i>
-                <span class="menu-text">个人资料</span>
-            </a>
+            <li class="">
+                <a href="/profile/to/page.do">
+                    <i class="menu-icon fa fa-tag"></i>
+                    <span class="menu-text">个人资料</span>
+                </a>
 
-        </li>
+            </li>
 
-    </ul><!-- /.nav-list -->
+        </ul>
+        <!-- /.nav-list -->
+    </c:if>
+    <c:if test="${role=='STUDENT'}">
+        <ul class="nav nav-list">
+            <li>
+                <a href="/user/to/index.do">
+                    <i class="menu-icon fa fa-tachometer"></i>
+                    <span class="menu-text"> 首页 </span>
+                </a>
 
+                <b class="arrow"></b>
+            </li>
+
+            <li class="">
+                <a href="#" class="dropdown-toggle">
+                    <i class="menu-icon fa fa-desktop"></i>
+                    <span class="menu-text"> 信息查询 </span>
+
+                    <b class="arrow fa fa-angle-down"></b>
+                </a>
+
+                <b class="arrow"></b>
+
+                <ul class="submenu">
+
+                    <li class="">
+                        <a href="jsp/searchchengji.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            成绩查询
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+
+                    <li class="">
+                        <a href="jsp/kechengsearch.jsp">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            课程查询
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="jsp/xuanke.jsp">
+                    <i class="menu-icon fa fa-list-alt"></i>
+                    <span class="menu-text"> 选课 </span>
+                </a>
+            </li>
+
+
+            <li class="">
+                <a href="/profile/to/page.do">
+                    <i class="menu-icon fa fa-tag"></i>
+                    <span class="menu-text">个人资料</span>
+                </a>
+
+            </li>
+
+        </ul>
+        <!-- /.nav-list -->
+    </c:if>
     <!-- #section:basics/sidebar.layout.minimize -->
     <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
         <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left"

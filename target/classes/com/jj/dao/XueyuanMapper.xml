@@ -12,5 +12,9 @@
       SELECT * from xueyuan ORDER by mingcheng
     </select>
 
+    <select id="isExist" resultType="boolean">
+        SELECT count(id) FROM xueyuan WHERE mingcheng=#{mingcheng}
+    </select>
+
 </mapper>
 

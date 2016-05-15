@@ -232,12 +232,22 @@
                                                 资料卡
                                             </a>
                                         </li>
-                                        <li>
-                                            <a data-toggle="tab" href="#friends">
-                                                <i class="blue ace-icon fa fa-users bigger-120"></i>
-                                                同学
-                                            </a>
-                                        </li>
+                                        <c:if test="${role=='STUDENT'}">
+                                            <li>
+                                                <a data-toggle="tab" href="#friends">
+                                                    <i class="blue ace-icon fa fa-users bigger-120"></i>
+                                                    同学
+                                                </a>
+                                            </li>
+                                        </c:if>
+                                        <c:if test="${role=='TEACHER'}">
+                                            <li>
+                                                <a data-toggle="tab" href="#friends">
+                                                    <i class="blue ace-icon fa fa-users bigger-120"></i>
+                                                    同事
+                                                </a>
+                                            </li>
+                                        </c:if>
                                     </ul>
 
                                     <div class="tab-content no-border padding-24">

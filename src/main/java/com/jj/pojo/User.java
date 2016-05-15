@@ -3,6 +3,7 @@ package com.jj.pojo;
 import com.jj.pojo.enumclass.Enable;
 import com.jj.pojo.enumclass.Role;
 import com.jj.utils.UUIDUtils;
+import org.springframework.util.StringUtils;
 
 /**
  * Created by yewangwang on 2016/5/5.
@@ -22,6 +23,7 @@ public class User {
     }
 
     public String getHeadImg() {
+        if(StringUtils.isEmpty(headImg))return null;
         return "../pic/"+headImg;
     }
 

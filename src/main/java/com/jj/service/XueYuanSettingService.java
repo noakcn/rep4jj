@@ -23,6 +23,11 @@ public class XueyuanSettingService {
             request.setAttribute("result", "fail");
             request.setAttribute("msg", "名称为空");
         }
+        if(xueyuanDao.isExist(requestObject.getMingcheng())){
+            request.setAttribute("result", "fail");
+            request.setAttribute("msg", "已存在");
+            request.setAttribute("mingcheng", requestObject.getMingcheng());
+        }
         Xueyuan xueyuan = new Xueyuan();
         xueyuan.setMingcheng(requestObject.getMingcheng());
         xueyuanDao.save(xueyuan);

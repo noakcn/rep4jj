@@ -12,5 +12,7 @@ public interface IXueyuanDao {
 
     List<Xueyuan> findAll();
 
+    boolean isExist(String mingcheng);
+
 
 }

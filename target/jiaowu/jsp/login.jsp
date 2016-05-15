@@ -55,10 +55,10 @@
                     <div class="center">
                         <h1>
                             <i class="ace-icon fa fa-leaf green"></i>
-                            <span class="red">Noak</span>
+                            <span class="red">ZJJ</span>
                             <span class="white" id="id-text2">教务管理</span>
                         </h1>
-                        <h4 class="blue" id="id-company-text">&copy; Noak Studio</h4>
+                        <h4 class="blue" id="id-company-text">&copy; zjj Studio</h4>
                     </div>
 
                     <div class="space-6"></div>
@@ -83,7 +83,7 @@
                                         <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
 															<input id="password" type="password" class="form-control"
-                                                                   placeholder="密码"/>
+                                                                   placeholder="密码" onkeypress="if(event.keyCode==13) {$('#login').click();return false;}"/>
 															<i class="ace-icon fa fa-lock"></i>
 														</span>
                                         </label>
@@ -208,6 +208,7 @@
             $('.widget-box.visible').removeClass('visible');//hide others
             $(target).addClass('visible');//show target
         });
+
     });
 
 

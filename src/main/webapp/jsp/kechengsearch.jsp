@@ -318,32 +318,38 @@
                                                 <td>${t.xueyuan.mingcheng}</td>
                                                 <td>${t.typeStr}</td>
                                                 <td>${t.zongkeshi}</td>
-                                                <td>
-                                                    <div class="hidden-sm hidden-xs btn-group">
-                                                        <button class="btn btn-xs btn-info">
-                                                            <a href="/search/to/update/kecheng.do?id=${t.id}" class="tooltip-info"
-                                                               data-rel="tooltip" title=""
-                                                               data-original-title="编辑">
+                                                <c:if test="${role=='STUDENT'}">
+                                                    <td>你不能这么做</td>
+                                                </c:if>
+                                                <c:if test="${role!='STUDENT'}">
+                                                    <td>
+                                                        <div class="hidden-sm hidden-xs btn-group">
+                                                            <button class="btn btn-xs btn-info">
+                                                                <a href="/search/to/update/kecheng.do?id=${t.id}" class="tooltip-info"
+                                                                   data-rel="tooltip" title=""
+                                                                   data-original-title="编辑">
                                                                 <span class="white">
 																	<i class="ace-icon fa fa-pencil bigger-120"></i>
 																</span>
-                                                            </a>
+                                                                </a>
 
-                                                        </button>
-                                                        <button class="btn btn-xs btn-danger">
-                                                            <a href="/search/delete/kecheng.do?id=${t.id}" class="tooltip-info"
-                                                               data-rel="tooltip" title=""
-                                                               data-original-title="删除">
+                                                            </button>
+                                                            <button class="btn btn-xs btn-danger">
+                                                                <a href="/search/delete/kecheng.do?id=${t.id}" class="tooltip-info"
+                                                                   data-rel="tooltip" title=""
+                                                                   data-original-title="删除">
                                                                 <span class="white">
 																	<i class="ace-icon fa fa-trash-o bigger-120"></i>
 																</span>
-                                                            </a>
+                                                                </a>
 
-                                                        </button>
-                                                    </div>
+                                                            </button>
+                                                        </div>
 
 
-                                                </td>
+                                                    </td>
+                                                </c:if>
+
                                             </tr>
                                         </c:forEach>
                                     </c:if>
