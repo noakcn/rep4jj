@@ -27,9 +27,11 @@ public class FindOneCourseService {
             kr.setXueShengs(new ArrayList<XueShengResponse>());
             for (XueSheng x : kecheng.getXueShengs()) {
                 XueShengResponse xsr = new XueShengResponse(x);
+                xsr.setChengji(x.getChengji());
                 kr.getXueShengs().add(xsr);
             }
             request.setAttribute("kecheng", kr);
+
         }
     }
 }

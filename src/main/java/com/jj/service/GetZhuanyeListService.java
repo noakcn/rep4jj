@@ -22,6 +22,7 @@ public class GetZhuanyeListService {
     public String getList(HttpServletRequest request) {
         List<Zhuanye> zhuanyeList = zhuanyeDao.findAll(request.getParameter("id"));
         StringBuilder sb = new StringBuilder();
+        sb.append("<option>请选择专业</option>");
         for (Zhuanye t : zhuanyeList) {
             sb.append("<option value='"+t.getId()+"'>"+t.getMingcheng()+"</option>");
         }

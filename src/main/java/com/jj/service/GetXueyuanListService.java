@@ -24,6 +24,7 @@ public class GetXueyuanListService {
     public String getList(HttpServletRequest request) {
         List<Xueyuan> xueyuanList = xueyuanDao.findAll();
         StringBuilder sb = new StringBuilder();
+        sb.append("<option>请选择学院</option>");
         for (Xueyuan t : xueyuanList) {
             sb.append("<option value='"+t.getId()+"'>"+t.getMingcheng()+"</option>");
         }

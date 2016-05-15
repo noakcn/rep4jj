@@ -16,10 +16,19 @@ public class Kecheng {
     private KechengType type;
     private String xueyuanId;
     private Xueyuan xueyuan;
+    private Double chengji;
     private List<XueSheng> xueShengs;
 
     public Kecheng() {
         id= UUIDUtils.generateId();
+    }
+
+    public Double getChengji() {
+        return chengji;
+    }
+
+    public void setChengji(Double chengji) {
+        this.chengji = chengji;
     }
 
     public List<XueSheng> getXueShengs() {

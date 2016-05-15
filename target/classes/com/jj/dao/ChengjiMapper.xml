@@ -3,6 +3,17 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.jj.dao.IChengjiDao">
+    <resultMap id="xueshengMap" type="com.jj.pojo.XueSheng">
+        <id column="user_id" property="userId"/>
+        <result column="xingming" property="xingming"/>
+        <result column="xuehao" property="xuehao"/>
+        <collection property="kechengs" resultMap="kechengMap"/>
+    </resultMap>
+   <resultMap id="kechengMap" type="com.jj.pojo.Kecheng">
+       <id column="kecheng_id" property="id"/>
+       <result column="kechengmingcheng" property="kechengmingcheng"/>
+       <result column="chengji" property="chengji"/>
+   </resultMap>
 
     <select id="findOne" resultType="com.jj.pojo.Chengji">
         SELECT * FROM chengjibiao
@@ -15,6 +26,17 @@
        VALUES (#{xueshengId},#{kechengId},#{chengji},#{isBukao},#{createDate})
     </insert>
 
-
+    <select id="findChengji" resultMap="xueshengMap">
+      SELECT xs.*,
+      cjb.*,
+      kc.*
+      FROM xuesheng xs LEFT JOIN chengjibiao cjb ON xs.user_id=cjb.xuesheng_id
+      LEFT JOIN kecheng kc ON kc.id=cjb.kecheng_id
+      <trim prefix="WHERE" prefixOverrides="AND |OR">
+          <if test="kechengId!=null">cjb.kecheng_id=#{kechengId}</if>
+          <if test="xueshengId!=null">AND cjb.xuesheng_id=#{xueshengId}</if>
+          <if test="kechengmingcheng!=null">AND kc.kechengmingcheng=#{kechengmingcheng}</if>
+      </trim>
+    </select>
 </mapper>
 

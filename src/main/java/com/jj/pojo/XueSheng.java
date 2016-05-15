@@ -4,6 +4,7 @@ import com.jj.pojo.enumclass.Enable;
 import com.jj.pojo.enumclass.Sex;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by yewangwang on 2016/5/5.
@@ -20,11 +21,20 @@ public class XueSheng {
     private Banji banji;
 
     private Double chengji;
+    private List<Kecheng> kechengs;
 
 
     public XueSheng() {
         createDate=new Date();
         this.enable=Enable.ENABLE;
+    }
+
+    public List<Kecheng> getKechengs() {
+        return kechengs;
+    }
+
+    public void setKechengs(List<Kecheng> kechengs) {
+        this.kechengs = kechengs;
     }
 
     public Double getChengji() {

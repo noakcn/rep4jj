@@ -24,6 +24,7 @@
     <!-- page specific plugin styles -->
     <link rel="stylesheet" href="../assets/css/jquery-ui.custom.min.css"/>
     <link rel="stylesheet" href="../assets/css/chosen.css"/>
+    <link rel="stylesheet" href="../assets/css/jquery.gritter.css"/>
     <link rel="stylesheet" href="../assets/css/datepicker.css"/>
     <link rel="stylesheet" href="../assets/css/bootstrap-timepicker.css"/>
     <link rel="stylesheet" href="../assets/css/daterangepicker.css"/>
@@ -203,14 +204,14 @@
             <div class="page-content-area">
                 <div class="page-header">
                     <h1>
-                        查询学生
+                        成绩录入
                     </h1>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
 
                         <sf:form enctype="multipart/form-data" class="form-horizontal" method="post"
-                                 action="/search/find/student.do" modelAttribute="requestObject">
+                                 action="/course/find/one/kecheng.do" modelAttribute="requestObject">
                             <div class="space-4"></div>
 
                             <div class="form-group">
@@ -238,20 +239,20 @@
                             </div>
                             <div class="space-4"></div>
                             <div class="form-group">
-                            <label class="col-sm-3 control-label no-padding-right">
-                                班级 </label>
-                            <div class="col-sm-5">
-                                <select class="chosen-select" id="banji_select" name="banjiId"
-                                        data-placeholder="请选择班级" onchange="getKecheng()">
-                                    <option value=""></option>
-                                </select>
+                                <label class="col-sm-3 control-label no-padding-right">
+                                    班级 </label>
+                                <div class="col-sm-5">
+                                    <select class="chosen-select" id="banji_select" name="banjiId"
+                                            data-placeholder="请选择班级" onchange="getKecheng()">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
                             <div class="form-group">
                                 <label class="col-sm-3 control-label no-padding-right">
                                     课程 </label>
                                 <div class="col-sm-5">
-                                    <select class="chosen-select" id="banji_select" name="kechengId"
+                                    <select class="chosen-select" id="kecheng_select" name="kechengId"
                                             data-placeholder="请选择课程">
                                         <option value=""></option>
                                     </select>
@@ -284,7 +285,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <!-- PAGE CONTENT BEGINS -->
-
+                        <input id="kechengId" value="${kecheng.id}" type="hidden">
                         <div class="row">
                             <div class="col-xs-12">
                                 <table id="sample-table-1" class="table table-striped table-bordered table-hover">
@@ -315,28 +316,38 @@
                                     </thead>
 
                                     <tbody>
-                                    <c:if test="${xueshengList!=null}">
-                                        <c:forEach items="${xueshengList}" var="t">
+                                    <c:if test="${kecheng!=null}">
+                                        <c:forEach items="${kecheng.xueShengs}" var="t">
                                             <tr>
                                                 <td>
                                                         ${t.xingming}
                                                 </td>
                                                 <td>${t.xuehao}</td>
-                                                <td>${t.mingcheng}</td>
-                                                <td>
-                                                    <div class="hidden-sm hidden-xs btn-group">
-                                                        <button class="btn btn-xs btn-success">
-                                                            <a href="/search/to/update/student.do?id=${t.userId}" class="tooltip-info"
-                                                               data-rel="tooltip" title=""
-                                                               data-original-title="确定">
+                                                <td>${t.banji.mingcheng}</td>
+                                                <td>${kecheng.kechengmingcheng}</td>
+                                                <td id="td_${t.userId}">
+                                                    <c:if test="${t.chengji!=null}">
+                                                        ${t.chengji}
+                                                    </c:if>
+                                                    <c:if test="${t.chengji==null}">
+                                                        <div class="hidden-sm hidden-xs btn-group">
+                                                            <input id="input_${t.userId}" type="text">
+                                                            <button class="btn btn-xs btn-success"
+                                                                    onclick="confirmChengji('${t.userId}')">
+                                                            <span class="tooltip-info"
+                                                                  data-rel="tooltip" title=""
+                                                                  data-original-title="确定">
                                                                 <span class="white">
-																	<i class="ace-icon fa fa-pencil bigger-120"></i>
+																	<i class="ace-icon fa fa-check bigger-120"></i>
 																</span>
-                                                            </a>
+                                                            </span>
 
-                                                        </button>
+                                                            </button>
 
-                                                    </div>
+                                                        </div>
+                                                    </c:if>
+
+
                                                 </td>
                                             </tr>
                                         </c:forEach>
@@ -415,6 +426,8 @@
     <script src="../assets/js/fuelux/fuelux.spinner.min.js"></script>
     <script src="../assets/js/date-time/bootstrap-datepicker.min.js"></script>
     <script src="../assets/js/date-time/bootstrap-timepicker.min.js"></script>
+    <script src="../assets/js/jquery.easypiechart.min.js"></script>
+    <script src="../assets/js/jquery.gritter.min.js"></script>
     <script src="../assets/js/date-time/moment.min.js"></script>
     <script src="../assets/js/date-time/daterangepicker.min.js"></script>
     <script src="../assets/js/date-time/bootstrap-datetimepicker.min.js"></script>
@@ -515,6 +528,7 @@
             onchange: null,
             thumbnail: false
         });
+
         function getZhuanye() {
             var id = $("#xueyuan_select option:selected").val();
             $.ajax({
@@ -561,23 +575,43 @@
         }
         ;
         function getKecheng() {
-            var id = $("#zhuanye_select option:selected").val();
+            var xueyuanId = $("#xueyuan_select option:selected").val();
+
             $.ajax({
-                url: "setting/banji/get/list.do?id=" + id,
+                url: "course/get/kecheng/list/ajax.do?xueyuanId=" + xueyuanId,
                 success: function (data) {
                     console.log(data);
-                    $("#banji_select option").remove();
-                    $("#banji_select").append(data);
-                    $("#banji_select").trigger("chosen:updated");
-                    $('#banji_select').chosen({allow_single_deselect: true});
-                    $("#banji_select")
+                    $("#kecheng_select option").remove();
+                    $("#kecheng_select").append(data);
+                    $("#kecheng_select").trigger("chosen:updated");
+                    $('#kecheng_select').chosen({allow_single_deselect: true});
+                    $("#kecheng_select")
                             .off('resize.chosen')
                             .on('resize.chosen', function () {
-                                $('#zhuanye_select').each(function () {
+                                $('#kecheng_select').each(function () {
                                     var $this = $(this);
                                     $this.next().css({'width': $this.parent().width()});
                                 })
                             }).trigger('resize.chosen');
+                }
+            });
+        }
+        ;
+        function confirmChengji(id) {
+            var chengji = $("#input_" + id).val();
+            var kechengId = $("#kechengId").val();
+            $.ajax({
+                url: "course/input/chengji.do?kechengId=" + kechengId + "&xueshengId=" + id + "&chengji=" + chengji,
+                success: function (data) {
+
+                    $.gritter.add({
+                        title: '提示',
+                        text: data,
+                        time: 1000,
+                        speed: 500,
+                        class_name: 'gritter-info gritter-center gritter-light'
+                    });
+                    $('#td_' + id).html(chengji);
                 }
             });
         }

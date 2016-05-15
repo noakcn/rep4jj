@@ -24,13 +24,23 @@ public class KechengResponse {
     private String status;
     private List<XueShengResponse> xueShengs;
 
+    private Double chengji;
+
     public KechengResponse(Kecheng o) {
         this.id = o.getId();
         this.kechengmingcheng = o.getKechengmingcheng();
         this.zongkeshi = o.getZongkeshi();
         this.xuefeng = o.getXuefeng();
-        this.typeStr = o.getType().getContent();
-        this.xueyuan = new XueyuanResponse(o.getXueyuan());
+        this.typeStr = o.getType()!=null?o.getType().getContent():null;
+        this.xueyuan = o.getXueyuanId()!=null?new XueyuanResponse(o.getXueyuan()):null;
+    }
+
+    public Double getChengji() {
+        return chengji;
+    }
+
+    public void setChengji(Double chengji) {
+        this.chengji = chengji;
     }
 
     public List<XueShengResponse> getXueShengs() {

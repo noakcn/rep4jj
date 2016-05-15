@@ -5,6 +5,7 @@ import com.jj.dao.IXueshengDao;
 import com.jj.pojo.Jiaoshi;
 import com.jj.pojo.XueSheng;
 import com.jj.pojo.enumclass.Role;
+import com.jj.response.JiaoshiResponse;
 import com.jj.response.XueShengResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -32,19 +33,20 @@ public class GetProfileInfoService {
         if (role.equals(Role.ADMIN)
                 || role.equals(Role.TEACHER)) {
             Jiaoshi jiaoshi = jiaoshiDao.findOne(id);
-            request.setAttribute("proinfo", jiaoshi);
+            JiaoshiResponse r=new JiaoshiResponse(jiaoshi);
+            request.setAttribute("proinfo", r);
         } else {
             XueSheng xueSheng = xueshengDao.findOne(id);
             XueShengResponse xueShengResponse = new XueShengResponse(xueSheng);
             request.setAttribute("proinfo", xueShengResponse);
-            List<XueSheng> schoolmate = xueshengDao.findAll(xueSheng.getBanjiId());
-            List<XueShengResponse> schoolmateResponse = new ArrayList<XueShengResponse>();
-            for (XueSheng x : schoolmate) {
-                if (x.getUserId().equals(id)) continue;
-                XueShengResponse r=new XueShengResponse(x);
-                schoolmateResponse.add(r);
-            }
-            request.setAttribute("schoolmate",schoolmateResponse);
+//            List<XueSheng> schoolmate = xueshengDao.findAll(xueSheng.getBanjiId());
+//            List<XueShengResponse> schoolmateResponse = new ArrayList<XueShengResponse>();
+//            for (XueSheng x : schoolmate) {
+//                if (x.getUserId().equals(id)) continue;
+//                XueShengResponse r=new XueShengResponse(x);
+//                schoolmateResponse.add(r);
+//            }
+//            request.setAttribute("schoolmate",schoolmateResponse);
         }
     }
 }

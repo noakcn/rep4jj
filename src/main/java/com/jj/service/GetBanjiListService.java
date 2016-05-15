@@ -22,6 +22,7 @@ public class GetBanjiListService {
     public String getList(HttpServletRequest request) {
         List<Banji> banjiList = banjiDao.findAll(request.getParameter("id"));
         StringBuilder sb = new StringBuilder();
+        sb.append("<option>请选择班级</option>");
         for (Banji t : banjiList) {
             sb.append("<option value='"+t.getId()+"'>"+t.getMingcheng()+"</option>");
         }

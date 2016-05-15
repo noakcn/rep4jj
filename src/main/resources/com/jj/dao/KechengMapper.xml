@@ -11,31 +11,39 @@
         <result column="type" property="type"/>
         <result column="xueyuan_id" property="xueyuanId"/>
         <association property="xueyuan" resultMap="xueyuanMap"/>
-        <collection property="xueshengs" resultMap="xueshengMap"/>
+        <collection property="xueShengs" resultMap="xueshengMap"/>
     </resultMap>
     <resultMap id="xueyuanMap" type="com.jj.pojo.Xueyuan">
         <result column="mingcheng" property="mingcheng"/>
     </resultMap>
     <resultMap id="xueshengMap" type="com.jj.pojo.XueSheng">
-        <id column="xuesheng_id" property="id"/>
+        <id column="xuesheng_id" property="userId"/>
         <result column="xingming" property="xingming"/>
         <result column="xuehao" property="xuehao"/>
         <result column="banji_id" property="banjiId"/>
-        <result column="chengji" property="chengji"/>
-    </resultMap>
+        <result column="xingbie" property="xingbie"/>
 
+        <result column="chengji" property="chengji"/>
+        <association property="banji" resultMap="banjiMap"/>
+    </resultMap>
+    <resultMap id="banjiMap" type="com.jj.pojo.Banji">
+        <id column="banji_id" property="id"/>
+        <result column="mingcheng" property="mingcheng"/>
+    </resultMap>
     <select id="findOne" resultMap="kechengMap">
         SELECT kc.*,
         bj.*,
         xs.*,
+        xkb.*,
         cjb.chengji
+
         FROM xuankebiao xkb LEFT JOIN kecheng kc ON xkb.kecheng_id=kc.id
         LEFT JOIN xuesheng xs ON xs.user_id=xkb.xuesheng_id
         LEFT JOIN banji bj ON bj.id=xs.banji_id
         LEFT JOIN chengjibiao cjb ON cjb.xuesheng_id=xs.user_id AND cjb.kecheng_id=kc.id
 
         WHERE bj.id=#{banjiId}
-        AND kc.id=#{kecheng}
+        AND kc.id=#{kechengId}
         AND xkb.enable=1
     </select>
 

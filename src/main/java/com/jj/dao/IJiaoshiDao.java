@@ -10,8 +10,10 @@ import java.util.List;
 public interface IJiaoshiDao {
 
     Jiaoshi findOne(String userId);
+    List<Jiaoshi> findAllByName(String xingming);
 
     int save(Jiaoshi jiaoshi);
 
     List<Jiaoshi> findAll();
+
 }

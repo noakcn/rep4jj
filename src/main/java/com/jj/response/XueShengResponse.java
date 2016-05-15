@@ -1,11 +1,13 @@
 package com.jj.response;
 
+import com.jj.pojo.Kecheng;
 import com.jj.pojo.XueSheng;
 import com.jj.pojo.enumclass.Enable;
 import com.jj.pojo.enumclass.Sex;
 import com.jj.utils.DateUtils;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by yewangwang on 2016/5/5.
@@ -22,20 +24,32 @@ public class XueShengResponse {
     private String ruxueDateStr;
     private String banjiId;
     private BanjiResponse banji;
+    private Double chengji;
     private String mingcheng;
+
+    private List<KechengResponse> kechengs;
+
 
     public XueShengResponse(XueSheng xs) {
         this.userId=xs.getUserId();
         this.xuehao=xs.getXuehao();
-        this.xingbieStr=xs.getXingbie().getContent();
+        this.xingbieStr=xs.getXingbie()!=null?xs.getXingbie().getContent():null;
         this.xingming=xs.getXingming();
-        this.xingbie=xs.getXingbie().getCode();
-        this.createDate=xs.getCreateDate().getTime();
-        this.ruxueDate=xs.getRuxueDate().getTime();
+        this.xingbie=xs.getXingbie()!=null?xs.getXingbie().getCode():null;
+        this.createDate=xs.getCreateDate()!=null?xs.getCreateDate().getTime():null;
+        this.ruxueDate=xs.getRuxueDate()!=null?xs.getRuxueDate().getTime():null;
         this.ruxueDateStr= DateUtils.format(1,xs.getRuxueDate());
         this.banjiId=xs.getBanjiId();
-        this.banji=new BanjiResponse(xs.getBanji());
-        this.mingcheng=banji.getMingcheng();
+        this.banji=xs.getBanji()!=null?new BanjiResponse(xs.getBanji()):null;
+        this.mingcheng=banji!=null?banji.getMingcheng():null;
+    }
+
+    public List<KechengResponse> getKechengs() {
+        return kechengs;
+    }
+
+    public void setKechengs(List<KechengResponse> kechengs) {
+        this.kechengs = kechengs;
     }
 
     public String getMingcheng() {
@@ -44,6 +58,14 @@ public class XueShengResponse {
 
     public void setMingcheng(String mingcheng) {
         this.mingcheng = mingcheng;
+    }
+
+    public Double getChengji() {
+        return chengji;
+    }
+
+    public void setChengji(Double chengji) {
+        this.chengji = chengji;
     }
 
     public BanjiResponse getBanji() {

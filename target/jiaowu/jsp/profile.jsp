@@ -316,6 +316,42 @@
                                                     </div>
                                                     <!-- /.col -->
                                                 </c:if>
+                                                <c:if test="${role=='ADMIN'||role=='TEACHER'}">
+                                                    <div class="col-xs-12 col-sm-9">
+
+
+                                                        <div class="profile-user-info">
+                                                            <div class="profile-info-row">
+                                                                <div class="profile-info-name"> 工号</div>
+
+                                                                <div class="profile-info-value">
+                                                                    <span>${proinfo.gonghao}</span>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="profile-info-row">
+                                                                <div class="profile-info-name"> 参加工作时间</div>
+
+                                                                <div class="profile-info-value">
+                                                                    <span>${proinfo.jobDateStr}</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="profile-info-row">
+                                                                <div class="profile-info-name"> 职称</div>
+
+                                                                <div class="profile-info-value">
+                                                                    <span>讲师</span>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+
+
+                                                    </div>
+                                                    <!-- /.col -->
+                                                </c:if>
                                             </div><!-- /.row -->
 
                                         </div><!-- /#home -->

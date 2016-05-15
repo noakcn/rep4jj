@@ -24,7 +24,7 @@ public class SearchKechengService {
     private IXuankeDao xuankeDao;
 
     public void findAll(GetKechengListRequest requestObject, HttpServletRequest request) {
-        System.out.println(requestObject);
+
         List<Kecheng> kechengs = kechengDao.findAll(requestObject.getXueyuanId(),
                 requestObject.getMingcheng(), null);
         List<KechengResponse> kechengResponses = new ArrayList<KechengResponse>();
@@ -34,14 +34,27 @@ public class SearchKechengService {
             Xuanke xuanke = xuankeDao.findOne(
                     (String) request.getSession().getAttribute("id"),
                     k.getId()
-                    );
-            if(xuanke!=null){
+            );
+            if (xuanke != null) {
                 r.setStatus("已选");
-            }else{
+            } else {
                 r.setStatus("未选");
             }
         }
         request.setAttribute("kechengList", kechengResponses);
 
+    }
+
+    public String findCourseList(GetKechengListRequest requestObject, HttpServletRequest request) {
+        List<Kecheng> kechengs = kechengDao.findAll(requestObject.getXueyuanId(),
+                requestObject.getMingcheng(), null);
+        StringBuilder options = new StringBuilder();
+        options.append("<option value=''>请选择课程</option>");
+        for (Kecheng k : kechengs) {
+            options.append("<option value='" + k.getId() + "'>");
+            options.append(k.getKechengmingcheng());
+            options.append("</option>");
+        }
+        return options.toString();
     }
 }

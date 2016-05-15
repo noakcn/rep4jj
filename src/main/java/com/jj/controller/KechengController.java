@@ -3,10 +3,7 @@ package com.jj.controller;
 import com.jj.request.GetKechengListRequest;
 import com.jj.request.SearchRequest;
 import com.jj.request.XuankeRequest;
-import com.jj.service.FindOneCourseService;
-import com.jj.service.SearchKechengService;
-import com.jj.service.TuixuanService;
-import com.jj.service.XuankeService;
+import com.jj.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,6 +25,8 @@ public class KechengController {
     private TuixuanService tuixuanService;
     @Autowired
     private FindOneCourseService findOneCourseService;
+    @Autowired
+    private InputChengjiService inputChengjiService;
 
     @RequestMapping("/do/xuanke")
     @ResponseBody
@@ -47,10 +46,22 @@ public class KechengController {
         return "jsp/xuanke";
     }
 
+    @RequestMapping("/get/kecheng/list/ajax")
+    @ResponseBody
+    public String getKechengListAjax(GetKechengListRequest requestObject, HttpServletRequest request) {
+        return searchKechengService.findCourseList(requestObject, request);
+    }
+
     @RequestMapping("/find/one/kecheng")
     public String searchStudent(SearchRequest requestObject, HttpServletRequest request) {
         findOneCourseService.findOne(requestObject, request);
         return "jsp/inchengji";
+    }
+
+    @RequestMapping("/input/chengji")
+    @ResponseBody
+    public String inputChengji(HttpServletRequest request){
+        return inputChengjiService.save(request);
     }
 
 

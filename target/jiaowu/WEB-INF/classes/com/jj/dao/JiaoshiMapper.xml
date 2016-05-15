@@ -5,7 +5,10 @@
 <mapper namespace="com.jj.dao.IJiaoshiDao">
     <select id="findOne" resultType="com.jj.pojo.Jiaoshi">
         SELECT * FROM jiaoshi WHERE user_id=#{userId}
+    </select>
 
+    <select id="findAllByName" resultType="com.jj.pojo.Jiaoshi">
+        SELECT * FROM jiaoshi WHERE xingming LIKE concat('%',#{xingming},'%')
     </select>
 
     <insert id="save" parameterType="com.jj.pojo.Jiaoshi">

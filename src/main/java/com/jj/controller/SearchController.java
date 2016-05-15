@@ -1,6 +1,6 @@
 package com.jj.controller;
 
-import com.jj.pojo.XueSheng;
+import com.jj.request.GetChengjiRequest;
 import com.jj.request.GetKechengListRequest;
 import com.jj.request.SearchRequest;
 import com.jj.request.UpdateStudentRequest;
@@ -27,6 +27,10 @@ public class SearchController {
     private ToUpdateStudentService toUpdateStudentService;
     @Autowired
     private SearchKechengService searchKechengService;
+    @Autowired
+    private GetChengjiService getChengjiService;
+    @Autowired
+    private FindTeacherService findTeacherService;
 
     @RequestMapping("/find/student")
     public String searchStudent(SearchRequest requestObject, HttpServletRequest request) {
@@ -34,6 +38,11 @@ public class SearchController {
         return "jsp/searchstudent";
     }
 
+    @RequestMapping("/find/teacher")
+    public String searchTeacher(SearchRequest requestObject, HttpServletRequest request) {
+        findTeacherService.find(requestObject,request);
+        return "jsp/searchteacher";
+    }
 
 
     @RequestMapping("/delete/student")
@@ -58,8 +67,14 @@ public class SearchController {
     }
 
     @RequestMapping("/get/kecheng/list")
-    public String getKechengList(GetKechengListRequest requestObject,HttpServletRequest request){
-        searchKechengService.findAll(requestObject,request);
+    public String getKechengList(GetKechengListRequest requestObject, HttpServletRequest request) {
+        searchKechengService.findAll(requestObject, request);
         return "jsp/kechengsearch";
+    }
+
+    @RequestMapping("/get/chengji")
+    public String getChengjie(GetChengjiRequest requestObject, HttpServletRequest request) {
+        getChengjiService.get(requestObject, request);
+        return "jsp/searchchengji";
     }
 }

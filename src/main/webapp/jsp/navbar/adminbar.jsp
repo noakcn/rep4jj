@@ -50,7 +50,7 @@
     </div><!-- /.sidebar-shortcuts -->
 
     <ul class="nav nav-list">
-        <li >
+        <li>
             <a href="/user/to/index.do">
                 <i class="menu-icon fa fa-tachometer"></i>
                 <span class="menu-text"> 首页 </span>
@@ -90,7 +90,7 @@
                         </li>
 
                         <li class="">
-                            <a href="jsp/searchstudent.jsp">
+                            <a href="jsp/searchteacher.jsp">
                                 <i class="menu-icon fa fa-caret-right"></i>
                                 教师查询
                             </a>
@@ -101,7 +101,7 @@
                 </li>
 
                 <li class="">
-                    <a href="typography.html">
+                    <a href="jsp/searchchengji.jsp">
                         <i class="menu-icon fa fa-caret-right"></i>
                         成绩查询
                     </a>
@@ -160,7 +160,7 @@
                 </li>
             </ul>
         </li>
-        <li >
+        <li>
             <a href="jsp/xuanke.jsp">
                 <i class="menu-icon fa fa-list-alt"></i>
                 <span class="menu-text"> 选课 </span>
@@ -225,7 +225,7 @@
 
 
         <li class="">
-            <a href="/profile/to/page.do" >
+            <a href="/profile/to/page.do">
                 <i class="menu-icon fa fa-tag"></i>
                 <span class="menu-text">个人资料</span>
             </a>
@@ -243,6 +243,7 @@
     <!-- /section:basics/sidebar.layout.minimize -->
     <script type="text/javascript">
         try {
+
             ace.settings.check('sidebar', 'collapsed')
         } catch (e) {
         }
