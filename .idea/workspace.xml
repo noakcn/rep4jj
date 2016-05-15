@@ -2,60 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="25b7fda3-598b-4a76-a930-fbf351ae1952" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/dao/IXueyuanDao.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/dao/IXueyuanDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/filter/LoginFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/filter/LoginFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/pojo/User.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/pojo/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/service/XueyuanSettingService.class" afterPath="$PROJECT_DIR$/target/classes/com/jj/service/XueyuanSettingService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu.war" afterPath="$PROJECT_DIR$/target/jiaowu.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/IXueyuanDao.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/IXueyuanDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/filter/LoginFilter.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/filter/LoginFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/service/XueyuanSettingService.class" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/service/XueyuanSettingService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/dao/IXueyuanDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/dao/IXueyuanDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/filter/LoginFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/filter/LoginFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/pojo/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/pojo/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jj/service/XueYuanSettingService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jj/service/XueYuanSettingService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/jj/dao/JiaoShiMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/jj/dao/JiaoShiMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/jj/dao/XueyuanMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/jj/dao/XueyuanMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/blank.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/blank.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/buttons.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/buttons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/dropzone.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/dropzone.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/email.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/email.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/error-404.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/error-404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/error-500.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/error-500.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/faq.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/faq.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/form-wizard.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/form-wizard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/gallery.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/gallery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/grid.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/grid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/inbox.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/inbox.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/invoice.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/invoice.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/jqgrid.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/jqgrid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/jquery-ui.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/jquery-ui.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/kechengsearch.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/kechengsearch.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/mobile-menu-1.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/mobile-menu-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/mobile-menu-2.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/mobile-menu-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/mobile-menu-3.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/mobile-menu-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/navbar/adminbar.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/navbar/adminbar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/navbar/head.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/navbar/head.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/nestable-list.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/nestable-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pricing.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pricing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/timeline.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/timeline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/top-menu.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/top-menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/treeview.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/treeview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/typography.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/typography.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/widgets.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/widgets.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/wysiwyg.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/wysiwyg.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/dao/JiaoshiMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/jj/dao/JiaoshiMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jj/dao/XueyuanMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/jj/dao/XueyuanMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/JiaoshiMapper.xml" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/JiaoshiMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/XueyuanMapper.xml" afterPath="$PROJECT_DIR$/target/jiaowu/WEB-INF/classes/com/jj/dao/XueyuanMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/kechengsearch.jsp" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/kechengsearch.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/navbar/adminbar.jsp" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/navbar/adminbar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/navbar/head.jsp" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/navbar/head.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jiaowu/jsp/profile.jsp" afterPath="$PROJECT_DIR$/target/jiaowu/jsp/profile.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/calendar.html" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/calendar.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/banjisetting.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/banjisetting.jsp" />
     </list>
     <ignored path="jiaowu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,15 +43,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="XueyuanMapper.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/jj/dao/XueyuanMapper.xml">
+      <file leaf-file-name="adminbar.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/navbar/adminbar.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0862069">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state vertical-scroll-proportion="-3.9666667">
+              <caret line="251" column="28" selection-start-line="251" selection-start-column="28" selection-end-line="251" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="banjisetting.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/banjisetting.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44692737">
+              <caret line="232" column="63" selection-start-line="231" selection-start-column="33" selection-end-line="232" selection-end-column="63" />
               <folding>
-                <marker date="1463309649558" expanded="true" signature="274:344" placeholder="INSERT INTO xueyuan... " />
-                <marker date="1463309649558" expanded="true" signature="425:465" placeholder="SELECT * fro... xueyuan" />
-                <marker date="1463309649558" expanded="true" signature="536:594" placeholder="SELECT * FRO... xueyuan" />
+                <marker date="1463318299716" expanded="true" signature="15804:15917" placeholder="..." />
+                <marker date="1463318299716" expanded="true" signature="20238:20270" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -133,7 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/com/jj/dao/XueshengMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/instudent.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/jj/request/EditAvatarRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jj/controller/ProfileController.java" />
@@ -184,6 +140,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/calendar.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/com/jj/dao/XueyuanMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/banjisetting.jsp" />
       </list>
     </option>
   </component>
@@ -553,9 +510,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1114,12 +1071,13 @@
       <workItem from="1463097734351" duration="636000" />
       <workItem from="1463201265867" duration="11733000" />
       <workItem from="1463215593211" duration="14806000" />
-      <workItem from="1463282123778" duration="25415000" />
+      <workItem from="1463282123778" duration="26014000" />
+      <workItem from="1463317463140" duration="1946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137738000" />
+    <option name="totallyTimeSpent" value="140283000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1131,7 +1089,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1144,24 +1102,24 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40192926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2677761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43890676" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43890676" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1226,14 +1184,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/uncompressed/ace-extra.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11973018">
-          <caret line="225" column="39" selection-start-line="225" selection-start-column="36" selection-end-line="225" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/jj/dao/KechengMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40319717">
@@ -1341,7 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3323782">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1349,7 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.857142">
           <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1358,7 +1306,7 @@
         <state vertical-scroll-proportion="0.46190476">
           <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1386,8 +1334,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="38" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#941#958#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#941#958#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1416,7 +1364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1456,7 +1403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1482,7 +1428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="59" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1521,8 +1466,6 @@
           <caret line="246" column="54" selection-start-line="246" selection-start-column="54" selection-end-line="246" selection-end-column="54" />
           <folding>
             <element signature="n#c:if#4;n#jsp:root#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <marker date="1463307909187" expanded="true" signature="48882:48995" placeholder="..." />
             <marker date="1463307909187" expanded="true" signature="59820:61181" placeholder="..." />
             <marker date="1463307909187" expanded="true" signature="59870:61153" placeholder="..." />
@@ -1542,7 +1485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46205732">
           <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1558,7 +1500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8161889">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1610,7 +1551,6 @@
         <state vertical-scroll-proportion="0.37477797">
           <caret line="192" column="29" selection-start-line="192" selection-start-column="29" selection-end-line="192" selection-end-column="29" />
           <folding>
-            <element signature="n#script#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <marker date="1463308446158" expanded="true" signature="14037:14150" placeholder="..." />
             <marker date="1463308446158" expanded="true" signature="19539:20573" placeholder="..." />
             <marker date="1463308446158" expanded="true" signature="19593:20562" placeholder="..." />
@@ -1631,14 +1571,6 @@
           <folding>
             <marker date="1463300569750" expanded="true" signature="18907:19028" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/navbar/adminbar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3143872">
-          <caret line="274" column="17" selection-start-line="274" selection-start-column="17" selection-end-line="274" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1672,12 +1604,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/jj/dao/XueyuanMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0862069">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.2683706">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
           <folding>
             <marker date="1463309649558" expanded="true" signature="274:344" placeholder="INSERT INTO xueyuan... " />
             <marker date="1463309649558" expanded="true" signature="425:465" placeholder="SELECT * fro... xueyuan" />
             <marker date="1463309649558" expanded="true" signature="536:594" placeholder="SELECT * FRO... xueyuan" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/navbar/adminbar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9666667">
+          <caret line="251" column="28" selection-start-line="251" selection-start-column="28" selection-end-line="251" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/banjisetting.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44692737">
+          <caret line="232" column="63" selection-start-line="231" selection-start-column="33" selection-end-line="232" selection-end-column="63" />
+          <folding>
+            <marker date="1463318299716" expanded="true" signature="15804:15917" placeholder="..." />
+            <marker date="1463318299716" expanded="true" signature="20238:20270" placeholder="..." />
           </folding>
         </state>
       </provider>

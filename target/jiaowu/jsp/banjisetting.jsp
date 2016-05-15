@@ -197,7 +197,7 @@
             <div class="page-content-area">
                 <div class="page-header">
                     <h1>
-                        专业设置
+                        班级设置
                     </h1>
                 </div><!-- /.page-header -->
 
