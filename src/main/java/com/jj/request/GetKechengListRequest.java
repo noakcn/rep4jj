@@ -7,7 +7,7 @@ import org.springframework.util.StringUtils;
  */
 public class GetKechengListRequest {
     private String xueyuanId;
-    private String mingcheng;
+    private String kechengmingcheng;
 
     public String getXueyuanId() {
         if(StringUtils.isEmpty(xueyuanId))
@@ -19,12 +19,15 @@ public class GetKechengListRequest {
         this.xueyuanId = xueyuanId;
     }
 
-    public String getMingcheng() {
-        if(StringUtils.isEmpty(mingcheng))return null;
-        return mingcheng;
+    public String getKechengmingcheng() {
+        if(StringUtils.isEmpty(kechengmingcheng))
+            return null;
+        return kechengmingcheng;
     }
 
-    public void setMingcheng(String mingcheng) {
-        this.mingcheng = mingcheng;
+    public void setKechengmingcheng(String kechengmingcheng) {
+        this.kechengmingcheng = kechengmingcheng;
     }
+
+
 }

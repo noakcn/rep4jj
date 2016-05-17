@@ -11,7 +11,9 @@
     </select>
 
     <select id="findAllByName" resultType="com.jj.pojo.Jiaoshi">
-        SELECT * FROM jiaoshi WHERE xingming LIKE concat('%',#{xingming},'%')
+        SELECT jiaoshi.*,
+         jiaoshi.job_date AS jobDate
+         FROM jiaoshi WHERE xingming LIKE concat('%',#{xingming},'%')
     </select>
 
     <insert id="save" parameterType="com.jj.pojo.Jiaoshi">

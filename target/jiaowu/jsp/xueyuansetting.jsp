@@ -212,7 +212,7 @@
 
                 <div class="row">
                     <div class="col-xs-12">
-                        <c:if test="${msg=='success'}">
+                        <c:if test="${result=='success'}">
                             <div class="alert alert-block alert-success">
                                 <button type="button" class="close" data-dismiss="alert">
                                     <i class="ace-icon fa fa-times"></i>
@@ -225,7 +225,7 @@
                                 </p>
                             </div>
                         </c:if>
-                        <c:if test="${msg=='fail'}">
+                        <c:if test="${result=='fail'}">
                             <div class="alert alert-danger">
                                 <button type="button" class="close" data-dismiss="alert">
                                     <i class="ace-icon fa fa-times"></i>
@@ -233,7 +233,7 @@
 
                                 <strong>
                                     <i class="ace-icon fa fa-times"></i>
-                                    添加失败，${msg}
+                                    添加失败，${mingcheng}${msg}
                                 </strong>
                                 <br>
                             </div>

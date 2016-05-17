@@ -26,7 +26,7 @@ public class SearchKechengService {
     public void findAll(GetKechengListRequest requestObject, HttpServletRequest request) {
 
         List<Kecheng> kechengs = kechengDao.findAll(requestObject.getXueyuanId(),
-                requestObject.getMingcheng(), null);
+                requestObject.getKechengmingcheng(), null);
         List<KechengResponse> kechengResponses = new ArrayList<KechengResponse>();
         for (Kecheng k : kechengs) {
             KechengResponse r = new KechengResponse(k);
@@ -47,7 +47,7 @@ public class SearchKechengService {
 
     public String findCourseList(GetKechengListRequest requestObject, HttpServletRequest request) {
         List<Kecheng> kechengs = kechengDao.findAll(requestObject.getXueyuanId(),
-                requestObject.getMingcheng(), null);
+                requestObject.getKechengmingcheng(), null);
         StringBuilder options = new StringBuilder();
         options.append("<option value=''>请选择课程</option>");
         for (Kecheng k : kechengs) {
